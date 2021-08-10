@@ -21,3 +21,106 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 */
+
+h1, h2, h3, h4, h5, h6,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-content cite,
+.entry-content figcaption,
+.entry-content table,
+.entry-content address,
+.entry-content .wp-caption-text,
+.entry-content .wp-block-file {
+	font-family: 'Zilla Slab', serif;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 1;
+}
+
+.heading-size-1,
+.entry-title {
+	font-weight: 200;
+}
+
+.entry-content {
+	font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+@media (min-width: 700px) {
+	.entry-content p,
+	.entry-content li {
+		line-height: 1.6;
+	}
+}
+
+body:not(.overlay-header) .primary-menu > li > a,
+body:not(.overlay-header) .primary-menu > li > .icon,
+.modal-menu a,
+.footer-menu a,
+.footer-widgets a,
+#site-footer .wp-block-button.is-style-outline,
+.wp-block-pullquote:before,
+.color-accent,
+.color-accent-hover:hover,
+.color-accent-hover:focus,
+:root .has-accent-color,
+.has-drop-cap:not(:focus):first-letter,
+.wp-block-button.is-style-outline,
+a {
+	color: #192D19;
+}
+
+button,
+.button,
+.faux-button,
+.wp-block-button__link,
+.wp-block-file .wp-block-file__button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.bg-accent,
+.bg-accent-hover:hover,
+.bg-accent-hover:focus,
+:root .has-accent-background-color,
+.comment-reply-link {
+	background-color: #192D19;
+}
+
+.site-description,
+#site-header a,
+#site-footer a,
+.menu-modal a,
+.modal-menu a,
+.menu-modal-inner a,
+.search-modal-inner a,
+.footer-menu a,
+.footer-widgets a,
+.footer-nav-widgets-wrapper a,
+.archive-header a,
+.singular .entry-header a,
+.singular .featured-media a,
+.wp-block-pullquote a,
+body:not(.overlay-header) .primary-menu > li > a,
+body:not(.overlay-header) .primary-menu > li > .icon,
+.header-footer-group .color-accent,
+.header-footer-group .color-accent-hover:hover,
+.singular:not(.overlay-header) .entry-header a {
+	color: #F5F1DC;
+}
+
+body:not(.overlay-header) .toggle-inner .toggle-text,
+.powered-by-wordpress,
+.to-the-top,
+.singular .entry-header .post-meta,
+.singular:not(.overlay-header) .entry-header .post-meta a {
+	color: #83a883;
+}
+
+.wp-block-jetpack-button button {
+	height: auto;
+}
