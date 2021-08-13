@@ -129,3 +129,11 @@ body:not(.overlay-header) .toggle-inner .toggle-text,
 .wp-block-jetpack-button button {
 	height: auto;
 }
+
+body:not(.overlay-header) .primary-menu ul {
+	background-color: #192d19;
+}
+
+body:not(.overlay-header) .primary-menu > li > ul::after {
+	border-bottom-color: #192d19;
+}
