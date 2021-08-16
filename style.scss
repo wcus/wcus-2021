@@ -21,13 +21,14 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 */
+
 body {
-  background-color: #fffdf4;
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: url(https://wc-us.org/wp-content/uploads/2021/08/background.svg);
+	background-color: #fffdf4;
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url(https://wc-us.org/wp-content/uploads/2021/08/background.svg);
 }
 
 h1,
@@ -48,28 +49,29 @@ h6,
 .entry-content address,
 .entry-content .wp-caption-text,
 .entry-content .wp-block-file {
-  font-family: "Zilla Slab", serif;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1;
+	font-family: "Zilla Slab", serif;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 1;
 }
 
 .heading-size-1,
 .entry-title {
-  font-weight: 200;
+	font-weight: 200;
 }
 
 .entry-content {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 18px;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
 }
 
 @media (min-width: 700px) {
-  .entry-content p,
-.entry-content li {
-    line-height: 1.6;
-  }
+	.entry-content p,
+	.entry-content li {
+		line-height: 1.6;
+	}
 }
+
 body:not(.overlay-header) .primary-menu > li > a,
 body:not(.overlay-header) .primary-menu > li > .icon,
 .modal-menu a,
@@ -84,7 +86,7 @@ body:not(.overlay-header) .primary-menu > li > .icon,
 .has-drop-cap:not(:focus)::first-letter,
 .wp-block-button.is-style-outline,
 a {
-  color: #192d19;
+	color: #192d19;
 }
 
 button,
@@ -92,15 +94,15 @@ button,
 .faux-button,
 .wp-block-button__link,
 .wp-block-file .wp-block-file__button,
-input[type=button],
-input[type=reset],
-input[type=submit],
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
 .bg-accent,
 .bg-accent-hover:hover,
 .bg-accent-hover:focus,
 :root .has-accent-background-color,
 .comment-reply-link {
-  background-color: #192d19;
+	background-color: #192d19;
 }
 
 .site-description,
@@ -122,7 +124,7 @@ body:not(.overlay-header) .primary-menu > li > .icon,
 .header-footer-group .color-accent,
 .header-footer-group .color-accent-hover:hover,
 .singular:not(.overlay-header) .entry-header a {
-  color: #f5f1dc;
+	color: #f5f1dc;
 }
 
 body:not(.overlay-header) .toggle-inner .toggle-text,
@@ -130,83 +132,77 @@ body:not(.overlay-header) .toggle-inner .toggle-text,
 .to-the-top,
 .singular .entry-header .post-meta,
 .singular:not(.overlay-header) .entry-header .post-meta a {
-  color: #83a883;
+	color: #83a883;
 }
 
 .wp-block-jetpack-button button {
-  height: auto;
+	height: auto;
 }
 
 body:not(.overlay-header) .primary-menu ul {
-  background-color: #f5f1dc;
+	background-color: #f5f1dc;
 }
 
 body:not(.overlay-header) .primary-menu ul a {
-  color: #192d19 !important;
+	color: #192d19 !important;
 }
 
 body:not(.overlay-header) .primary-menu > li > ul::after {
-  border-bottom-color: #f5f1dc;
+	border-bottom-color: #f5f1dc;
 }
 
 /* Tickets */
 #tix {
-  max-width: 78rem;
-  width: calc(100vw - 8rem);
+	max-width: 78rem;
+	width: calc(100vw - 8rem);
 }
 
 #tix table {
-  background-color: #fffdf4;
+	background-color: #fffdf4;
 }
 
 #tix td,
 #tix th {
-  border: none;
+	border: none;
 }
 
 #tix select {
-  border: revert;
+	border: revert;
 }
 
-.tix-ticket-form input[type=text],
-.tix-ticket-form input[type=email],
-.tix-ticket-form input[type=url],
-.tix-ticket-form textarea,
-.tix-private-form input[type=text],
-.tix-private-form input[type=email],
-.tix-private-form input[type=url],
-.tix-private-form textarea,
-.tix-attendee-form input[type=text],
-.tix-attendee-form input[type=email],
-.tix-attendee-form input[type=url],
-.tix-attendee-form textarea,
-.tix-receipt-form input[type=text],
-.tix-receipt-form input[type=email],
-.tix-receipt-form input[type=url],
-.tix-receipt-form textarea {
-  width: 100%;
-  box-sizing: border-box;
-}
-.tix-ticket-form label,
-.tix-private-form label,
-.tix-attendee-form label,
-.tix-receipt-form label {
-  margin-bottom: 0;
+.tix-ticket-form,
+.tix-private-form,
+.tix-attendee-form,
+.tix-receipt-form {
+	input[type="text"],
+	input[type="email"],
+	input[type="url"],
+	textarea {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	// td
+	label {
+		margin-bottom: 0;
+	}
 }
 
-.tix-row-first-name td,
-.tix-row-last-name td,
-.tix-row-email td,
-.tix-row-question-616 td,
-.tix-row-question-617 td,
-.tix-row-question-618 td,
-.tix-row-question-619 td,
-.tix-row-question-620 td,
-.tix-row-question-621 td {
-  vertical-align: middle;
+.tix-row-first-name,
+.tix-row-last-name,
+.tix-row-email,
+.tix-row-question-616,
+.tix-row-question-617,
+.tix-row-question-618,
+.tix-row-question-619,
+.tix-row-question-620,
+.tix-row-question-621 {
+	td {
+		vertical-align: middle;
+	}
 }
 
 /* override the spacing offset. */
 body.admin-bar #tix {
-  padding-top: 0;
+	padding-top: 0;
 }
