@@ -193,6 +193,18 @@ body:not(.overlay-header) .primary-menu > li > ul::after {
 .tix-receipt-form label {
   margin-bottom: 0;
 }
+.tix-ticket-form .tix-right br,
+.tix-private-form .tix-right br,
+.tix-attendee-form .tix-right br,
+.tix-receipt-form .tix-right br {
+  display: none;
+}
+.tix-ticket-form .tix-right label,
+.tix-private-form .tix-right label,
+.tix-attendee-form .tix-right label,
+.tix-receipt-form .tix-right label {
+  margin-bottom: 1rem;
+}
 
 .tix-row-first-name td,
 .tix-row-last-name td,

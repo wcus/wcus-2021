@@ -186,6 +186,14 @@ body:not(.overlay-header) .primary-menu > li > ul::after {
 	label {
 		margin-bottom: 0;
 	}
+
+	.tix-right br {
+		display: none;
+	}
+
+	.tix-right label {
+		margin-bottom: 1rem;
+	}
 }
 
 .tix-row-first-name,
