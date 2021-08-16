@@ -151,3 +151,19 @@ body:not(.overlay-header) .primary-menu ul a {
 body:not(.overlay-header) .primary-menu > li > ul::after {
 	border-bottom-color: #f5f1dc;
 }
+
+/* Tickets */
+
+#tix {
+	max-width: calc(100vw - 8rem);
+	width: calc(100vw - 8rem);
+}
+
+#tix select {
+	border: revert;
+}
+
+/* override the spacing offset. */
+body.admin-bar #tix {
+	padding-top: 0;
+}
