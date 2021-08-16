@@ -168,6 +168,22 @@ body:not(.overlay-header) .primary-menu > li > ul::after {
   border: revert;
 }
 
+.tix-column-remaining {
+  display: none;
+}
+
+.tix-tickets-list .tix-column-description {
+  font-weight: 700;
+}
+
+.tix-tickets-list .tix-ticket-title {
+  font-weight: normal;
+}
+
+.tix-column-quantity {
+  text-align: right;
+}
+
 .tix-ticket-form input[type=text],
 .tix-ticket-form input[type=email],
 .tix-ticket-form input[type=url],
