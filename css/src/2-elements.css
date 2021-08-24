@@ -13,6 +13,7 @@ body {
 	font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: var(--wcus--font-size--body);
 	line-height: var(--wcus--line-height--body);
+	color: var(--wcus--color--evergreen);
 }
 
 h1,
@@ -27,7 +28,12 @@ h6 {
 }
 
 a {
-	color: var(--wcus--color--orange);
+	color: #517451;
+
+	&:hover,
+	&:focus {
+		text-decoration-thickness: 2px;
+	}
 }
 
 img {
@@ -91,4 +97,37 @@ button {
 			0 0 0 1px var(--wcus--color--evergreen),
 			0 0 0 3px var(--wcus--color--fern);
 	}
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: var(--wcus--color--cream);
+}
+
+thead {
+	text-align: left;
+}
+
+tr {
+
+	th:first-child,
+	td:first-child {
+		padding-left: 0;
+	}
+
+	th:last-child,
+	td:last-child {
+		padding-right: 0;
+	}
+}
+
+td,
+th {
+	padding: 1rem 1.5rem;
+}
+
+tbody th,
+tbody td {
+	border-top: 1px solid var(--wcus--color--sand);
 }

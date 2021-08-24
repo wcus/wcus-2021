@@ -1,0 +1,64 @@
+/* Alignments */
+
+.alignfull,
+.alignwide {
+	margin: * calc(50% - 50vw);
+	max-width: 100vw;
+	width: 100vw;
+}
+
+@media (min-width: 87.5rem) {
+
+	.alignwide {
+		margin: * -13.75rem;
+		max-width: 87.5rem;
+		width: 87.5rem;
+	}
+}
+
+/* Colors */
+
+.has-background {
+	padding: 1rem;
+}
+
+.has-background.alignfull,
+.has-background.alignwide {
+	padding: 3rem;
+}
+
+:root .has-luminous-vivid-orange-background-color {
+	background-color: var(--wcus--color--orange);
+	color: var(--wcus--color--forest);
+}
+
+:root .has-luminous-vivid-amber-background-color {
+	background-color: var(--wcus--color--sand);
+	color: var(--wcus--color--forest);
+}
+
+:root .has-light-green-cyan-background-color {
+	background-color: var(--wcus--color--fern);
+	color: var(--wcus--color--forest);
+}
+
+:root .has-vivid-green-cyan-background-color {
+	background-color: var(--wcus--color--evergreen);
+	color: var(--wcus--color--cream);
+}
+
+:root .has-luminous-vivid-orange-color {
+	color: var(--wcus--color--orange);
+}
+
+:root .has-luminous-vivid-amber-color {
+	color: var(--wcus--color--sand);
+}
+
+:root .has-light-green-cyan-color {
+	color: var(--wcus--color--fern);
+}
+
+:root .has-vivid-green-cyan-color {
+	color: var(--wcus--color--evergreen);
+}

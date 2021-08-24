@@ -4,6 +4,7 @@ html {
 	--wcus--font--body: Inter, var(--font--system); /* stylelint-disable-line value-keyword-case */
 	--wcus--font--header: "Zilla Slab", serif;
 
+	--wcus--font-size--site-header: 4.25rem;
 	--wcus--font-size--header: 3rem;
 	--wcus--font-size--level-1: 2.25rem;
 	--wcus--font-size--level-2: 2rem;

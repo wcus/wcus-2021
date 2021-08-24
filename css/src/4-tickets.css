@@ -1,22 +1,4 @@
 /* Tickets */
-#tix {
-	max-width: 78rem;
-	width: calc(100vw - 8rem);
-}
-
-#tix table {
-	background-color: #fffdf4;
-}
-
-#tix td,
-#tix th {
-	border: none;
-}
-
-#tix select {
-	border: revert;
-}
-
 .tix-column-remaining {
 	display: none;
 }

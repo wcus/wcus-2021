@@ -14,24 +14,18 @@
 	content: "";
 	position: absolute 0 0;
 	z-index: -1;
-	min-height: 15rem;
-	height: 40vh;
-	max-height: 25rem;
+	height: 25rem;
 	width: 100%;
 	background: var(--wcus--color--forest);
 }
 
 article:not(.has-post-thumbnail) .entry-header {
-	min-height: 13rem;
-	height: calc(40vh - 2rem);
-	max-height: 23rem;
+	height: 23rem;
 	justify-content: flex-start;
 }
 
 .has-post-thumbnail .entry-header::before {
-	min-height: 30rem;
-	height: 50vh;
-	max-height: 40rem;
+	height: 40rem;
 }
 
 .entry-title {
@@ -113,4 +107,12 @@ article:not(.has-post-thumbnail) .entry-header {
 
 .post-navigation .nav-prev {
 	grid-column: 1;
+}
+
+body.page-template-page-full-width .entry-header {
+	display: none;
+}
+
+body.page-template-page-full-width .entry-content {
+	margin-top: 0;
 }

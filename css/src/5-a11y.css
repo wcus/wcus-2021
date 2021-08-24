@@ -13,12 +13,12 @@
 }
 
 .screen-reader-text:focus {
-	background-color: var(--page-background);
+	background-color: var(--wcus--color--cream);
 	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 2px 2px var(--wcus--color--orange);
 	clip: auto !important;
 	clip-path: none;
-	color: var(--main-color);
+	color: var(--wcus--color--forest);
 	display: block;
 	font-size: 0.875rem;
 	font-weight: 700;
@@ -30,6 +30,10 @@
 	top: 5px;
 	width: auto;
 	z-index: 100000;
+}
+
+body.admin-bar .screen-reader-text:focus {
+	top: 51px;
 }
 
 /* Do not show the outline on the skip link target. */

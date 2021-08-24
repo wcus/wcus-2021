@@ -28,6 +28,7 @@ html {
 	--wcus--font--body: Inter, var(--font--system); /* stylelint-disable-line value-keyword-case */
 	--wcus--font--header: "Zilla Slab", serif;
 
+	--wcus--font-size--site-header: 4.25rem;
 	--wcus--font-size--header: 3rem;
 	--wcus--font-size--level-1: 2.25rem;
 	--wcus--font-size--level-2: 2rem;
@@ -68,6 +69,7 @@ body {
 	font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: var(--wcus--font-size--body);
 	line-height: var(--wcus--line-height--body);
+	color: var(--wcus--color--evergreen);
 }
 
 h1,
@@ -82,8 +84,13 @@ h6 {
 }
 
 a {
-	color: var(--wcus--color--orange);
+	color: #517451
 }
+
+a:hover,
+	a:focus {
+		text-decoration-thickness: 2px;
+	}
 
 img {
 	vertical-align: middle;
@@ -149,6 +156,39 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focu
 			0 0 0 1px var(--wcus--color--evergreen),
 			0 0 0 3px var(--wcus--color--fern);
 	}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: var(--wcus--color--cream);
+}
+
+thead {
+	text-align: left;
+}
+
+tr {
+
+	th:first-child,
+	td:first-child {
+		padding-left: 0;
+	}
+
+	th:last-child,
+	td:last-child {
+		padding-right: 0;
+	}
+}
+
+td,
+th {
+	padding: 1rem 1.5rem;
+}
+
+tbody th,
+tbody td {
+	border-top: 1px solid var(--wcus--color--sand);
+}
 
 /* Header */
 
@@ -375,24 +415,18 @@ input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focu
 	left: 0;
 	position: absolute;
 	z-index: -1;
-	min-height: 15rem;
-	height: 40vh;
-	max-height: 25rem;
+	height: 25rem;
 	width: 100%;
 	background: var(--wcus--color--forest);
 }
 
 article:not(.has-post-thumbnail) .entry-header {
-	min-height: 13rem;
-	height: calc(40vh - 2rem);
-	max-height: 23rem;
+	height: 23rem;
 	justify-content: flex-start;
 }
 
 .has-post-thumbnail .entry-header::before {
-	min-height: 30rem;
-	height: 50vh;
-	max-height: 40rem;
+	height: 40rem;
 }
 
 .entry-title {
@@ -478,6 +512,14 @@ article:not(.has-post-thumbnail) .entry-header {
 
 .post-navigation .nav-prev {
 	grid-column: 1;
+}
+
+body.page-template-page-full-width .entry-header {
+	display: none;
+}
+
+body.page-template-page-full-width .entry-content {
+	margin-top: 0;
 }
 
 .comments-area {
@@ -590,6 +632,7 @@ body #eu-cookie-law input[type="submit"]:focus {
 /* Footer */
 
 .site-footer {
+	margin-top: 4rem;
 	padding: 2rem;
 	background: var(--wcus--color--evergreen);
 	color: var(--wcus--color--cream);
@@ -646,25 +689,81 @@ body #eu-cookie-law input[type="submit"]:focus {
 		0 0 0 3px var(--wcus--color--evergreen);
 }
 
+.wp-block-table.is-style-stripes tbody tr:nth-child(2n+1) {
+	background-color: var(--wcus--color--tan);
+}
+
+/* Home styles */
+
+.homepage-header {
+	height: 56rem;
+	padding: 3rem;
+}
+
+.homepage-header::before {
+	background: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/map.svg) no-repeat center;
+	background-size: 1400px 918px;
+	opacity: 1 !important;
+}
+
+.homepage-header .wp-block-cover__inner-container::before {
+	content: "";
+	top: 3rem;
+	left: 3rem;
+	position: absolute;
+	width: 7.75rem;
+	height: 7.75rem;
+	background: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/compass-rose.svg) no-repeat center;
+	background-size: contain;
+}
+
+.homepage-header h1 {
+	margin: 0 0 0.75rem;
+	font-size: var(--wcus--font-size--site-header);
+	line-height: 0.8;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+.homepage-header .meta-event-date {
+	margin: 0;
+	font-size: var(--wcus--font-size--body);
+	line-height: var(--wcus--line-height--header);
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+.homepage-header .meta-past-locations {
+	margin: 0;
+	color: var(--wcus--color--fern) !important;
+	font-size: 0.875rem;
+	line-height: var(--wcus--line-height--header);
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+}
+
+.homepage-header .meta-past-locations::before {
+	content: "";
+	display: inline-block;
+	margin-right: 1rem;
+	width: 9rem;
+	height: 0.75rem;
+	background: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/banner.svg) no-repeat center;
+	background-size: contain;
+}
+
+@media screen and (max-width: 782px) {
+
+	.homepage-header .meta-past-locations::before {
+		display: block;
+		margin-right: 0;
+		margin-bottom: 0.75rem;
+	}
+}
+
 /* Tickets */
-
-#tix {
-	max-width: 78rem;
-	width: calc(100vw - 8rem);
-}
-
-#tix table {
-	background-color: #fffdf4;
-}
-
-#tix td,
-#tix th {
-	border: none;
-}
-
-#tix select {
-	border: revert;
-}
 
 .tix-column-remaining {
 	display: none;
@@ -741,13 +840,13 @@ body.admin-bar #tix {
 }
 
 .screen-reader-text:focus {
-	background-color: var(--page-background);
+	background-color: var(--wcus--color--cream);
 	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 2px 2px var(--wcus--color--orange);
 	clip: auto !important;
 	-webkit-clip-path: none;
 	        clip-path: none;
-	color: var(--main-color);
+	color: var(--wcus--color--forest);
 	display: block;
 	font-size: 0.875rem;
 	font-weight: 700;
@@ -761,8 +860,79 @@ body.admin-bar #tix {
 	z-index: 100000;
 }
 
+body.admin-bar .screen-reader-text:focus {
+	top: 51px;
+}
+
 /* Do not show the outline on the skip link target. */
 
 #content[tabindex="-1"]:focus {
 	outline: 0;
+}
+
+/* Alignments */
+
+.alignfull,
+.alignwide {
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
+	max-width: 100vw;
+	width: 100vw;
+}
+
+@media (min-width: 87.5rem) {
+
+	.alignwide {
+		margin-left: -13.75rem;
+		margin-right: -13.75rem;
+		max-width: 87.5rem;
+		width: 87.5rem;
+	}
+}
+
+/* Colors */
+
+.has-background {
+	padding: 1rem;
+}
+
+.has-background.alignfull,
+.has-background.alignwide {
+	padding: 3rem;
+}
+
+:root .has-luminous-vivid-orange-background-color {
+	background-color: var(--wcus--color--orange);
+	color: var(--wcus--color--forest);
+}
+
+:root .has-luminous-vivid-amber-background-color {
+	background-color: var(--wcus--color--sand);
+	color: var(--wcus--color--forest);
+}
+
+:root .has-light-green-cyan-background-color {
+	background-color: var(--wcus--color--fern);
+	color: var(--wcus--color--forest);
+}
+
+:root .has-vivid-green-cyan-background-color {
+	background-color: var(--wcus--color--evergreen);
+	color: var(--wcus--color--cream);
+}
+
+:root .has-luminous-vivid-orange-color {
+	color: var(--wcus--color--orange);
+}
+
+:root .has-luminous-vivid-amber-color {
+	color: var(--wcus--color--sand);
+}
+
+:root .has-light-green-cyan-color {
+	color: var(--wcus--color--fern);
+}
+
+:root .has-vivid-green-cyan-color {
+	color: var(--wcus--color--evergreen);
 }

@@ -18,3 +18,7 @@
 		0 0 0 1px var(--wcus--color--cream),
 		0 0 0 3px var(--wcus--color--evergreen);
 }
+
+.wp-block-table.is-style-stripes tbody tr:nth-child(2n+1) {
+	background-color: var(--wcus--color--tan);
+}
