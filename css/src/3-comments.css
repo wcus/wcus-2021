@@ -1,0 +1,65 @@
+.comments-area {
+	margin: 6rem auto 0;
+	max-width: var(--wcus--content-width);
+}
+
+.comment-list {
+	margin-bottom: 4rem;
+	padding: 0;
+	list-style: none;
+}
+
+.comment-list .children {
+	margin-top: -2rem;
+	padding: 1rem 0 1rem 2rem;
+	list-style: none;
+}
+
+.comment-list .avatar {
+	float: left;
+	margin-right: 1rem;
+	margin-top: 0.5rem;
+}
+
+.comment-body {
+	margin-bottom: 2rem;
+}
+
+.comment-meta {
+	font-size: 0.875rem;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.comment-reply-link {
+	font-size: var(--wcus--font-size--small);
+}
+
+#cancel-comment-reply-link {
+	margin-left: 0.5rem;
+}
+
+.comment-form label {
+	display: block;
+}
+
+.comment-form input,
+.comment-form textarea {
+	width: 66%;
+}
+
+.comment-form-cookies-consent label {
+	display: inline;
+}
+
+.comment-form-cookies-consent input {
+	width: 16px;
+	height: 16px;
+	margin-right: 0.5rem;
+}
+
+.form-submit input {
+	width: auto;
+}

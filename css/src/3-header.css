@@ -1,0 +1,202 @@
+/* Header */
+
+.site-header {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	padding: 1rem;
+}
+
+.custom-logo {
+	width: 150px;
+	height: auto;
+}
+
+.main-navigation .menu {
+	list-style: none;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 0;
+	padding-left: 0;
+
+	& a {
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		padding: 3rem 0.5rem 1rem;
+	}
+
+	& li:hover > .sub-menu,
+	& li.focus > .sub-menu {
+		left: auto;
+	}
+}
+
+.main-navigation .sub-menu {
+	position: absolute;
+	top: 4rem;
+	left: -999em;
+	z-index: 99999;
+	width: 14rem;
+	padding: 0;
+	margin: 1em 0 0;
+	list-style: none;
+	background: var(--wcus--color--tan);
+
+	&.toggled-on {
+		left: auto;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -0.5rem;
+		bottom: -0.5rem;
+		left: 3rem;
+		display: block;
+		width: 0;
+		height: 0;
+		border-width: 0 0.5rem 0.5rem;
+		border-color: transparent transparent var(--wcus--color--tan);
+		border-style: solid;
+	}
+}
+
+.main-navigation a {
+	display: inline-block;
+	font-family: var(--wcus--font--body);
+	font-weight: 700;
+	font-size: var(--wcus--font-size--small);
+	line-height: var(--wcus--line-height--uppercase);
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--wcus--color--black);
+
+	&:focus,
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.main-navigation .sub-menu a {
+	padding: 1rem;
+	text-transform: none;
+	letter-spacing: 0;
+	font-weight: 500;
+}
+
+.main-navigation .menu-item-has-children {
+	position: relative;
+}
+
+.main-navigation .dropdown-toggle {
+	position: absolute;
+	top: 3.5rem;
+	right: 0;
+	padding: 0;
+	height: 0.3125rem;
+	width: 0.625rem;
+	background: transparent url(https://wc-us.org/wp-content/uploads/2019/05/chevron-down-current.svg) no-repeat center;
+	background-size: contain;
+	border: none;
+}
+
+.js .menu-toggle {
+	position: relative;
+	display: none;
+	z-index: 100;
+}
+
+.main-navigation .home-link {
+	display: none;
+}
+
+@media screen and (min-width: 783px) {
+
+	.site-header {
+		position: relative;
+		display: revert;
+		z-index: 100;
+		height: 7rem;
+		padding: 0;
+		overflow: visible;
+	}
+
+	.custom-header {
+		display: none;
+	}
+
+	.main-navigation .home-link {
+		display: revert;
+	}
+
+	.main-navigation .home-link a {
+		display: inline-block;
+		background: url(https://i1.wp.com/us.wordcamp.org/2021/files/2021/08/WCUS-logo.png) no-repeat center;
+		background-size: contain;
+		height: 114px;
+		width: 155px;
+		text-indent: -999em;
+	}
+}
+
+@media screen and (max-width: 782px) {
+
+	.js .menu-toggle {
+		display: inline-block;
+		background: url(https://wc-us.org/wp-content/uploads/2019/05/hamburger.svg) no-repeat center;
+		background-size: 26px 17px;
+		padding: 0;
+		width: 2.5rem;
+		height: 2.875rem;
+		text-indent: -999em;
+		border: 2px solid transparent;
+	}
+
+	.toggled-on .menu-toggle {
+		background-image: url(https://wc-us.org/wp-content/uploads/2019/05/cross.svg);
+		background-size: 18px 18px;
+	}
+
+	.main-navigation .menu {
+		display: none;
+		text-align: left;
+	}
+
+	.main-navigation .menu a {
+		padding: 0.5rem 0;
+		text-transform: none;
+		letter-spacing: 0;
+		font-weight: 500;
+	}
+
+	.main-navigation .dropdown-toggle {
+		display: none;
+	}
+
+	.main-navigation.toggled-on .menu {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 1em 2em 2em;
+		background: var(--wcus--color--cream);
+	}
+
+	body.admin-bar .main-navigation.toggled-on .menu {
+		top: 46px;
+	}
+
+	.main-navigation .sub-menu {
+		position: initial;
+		display: revert;
+		background: initial;
+		margin-top: 0;
+		margin-left: 1rem;
+
+		&::before {
+			display: none;
+		}
+	}
+}

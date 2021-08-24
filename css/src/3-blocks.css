@@ -1,0 +1,20 @@
+/* Buttons */
+.wp-block-button__link {
+	background-color: var(--wcus--color--evergreen);
+	color: var(--wcus--color--cream);
+}
+
+.wp-block-button__link:active,
+.wp-block-button__link:focus,
+.wp-block-button__link:hover,
+.wp-block-button__link:visited {
+	background-color: var(--wcus--color--fern);
+	color: var(--wcus--color--forest);
+}
+
+.wp-block-button__link:focus {
+	outline: none;
+	box-shadow:
+		0 0 0 1px var(--wcus--color--cream),
+		0 0 0 3px var(--wcus--color--evergreen);
+}

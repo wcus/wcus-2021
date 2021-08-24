@@ -34,7 +34,7 @@ function wcus_2021_enqueue_styles() {
 		$version = filemtime( dirname( __FILE__ ) . '/style.css' );
 	}
 
-	wp_dequeue_style( 'campsite-2017-style' );
+	wp_deregister_style( 'campsite-2017-style' );
 	wp_enqueue_style( 'wcus-2021-style', get_stylesheet_directory_uri() . '/style.css', array(), $version );
 }
 add_action( 'wp_enqueue_scripts', 'wcus_2021_enqueue_styles', 12 );

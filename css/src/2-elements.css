@@ -1,0 +1,94 @@
+body,
+body.custom-background.custom-background {
+	background-color: var(--wcus--color--cream);
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url(https://wc-us.org/wp-content/uploads/2021/08/background.svg);
+}
+
+body {
+	margin: 0.5rem;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: var(--wcus--font-size--body);
+	line-height: var(--wcus--line-height--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--wcus--font--header);
+	font-weight: 400;
+	line-height: var(--wcus--line-height--header);
+}
+
+a {
+	color: var(--wcus--color--orange);
+}
+
+img {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+textarea {
+	padding: 1rem;
+	border: 1px solid var(--wcus--color--sand);
+	font-size: var(--wcus--font-size--body);
+
+	&:focus {
+		outline: 2px solid var(--wcus--color--fern);
+		border-color: var(--wcus--color--evergreen);
+		box-shadow: none;
+	}
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+
+	&:focus {
+		outline: none;
+		box-shadow:
+			0 0 0 1px var(--wcus--color--evergreen),
+			0 0 0 3px var(--wcus--color--fern);
+	}
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button {
+	padding: 1rem 3rem;
+	background: var(--wcus--color--evergreen);
+	color: var(--wcus--color--cream);
+	border: none;
+	border-radius: 5px;
+	font-size: var(--wcus--font-size--body);
+
+	&:focus,
+	&:hover {
+		background-color: var(--wcus--color--sand);
+		color: var(--wcus--color--forest);
+	}
+
+	&:focus {
+		outline: none;
+		box-shadow:
+			0 0 0 1px var(--wcus--color--evergreen),
+			0 0 0 3px var(--wcus--color--fern);
+	}
+}

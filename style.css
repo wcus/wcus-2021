@@ -1,0 +1,768 @@
+/*
+Theme Name: WCUS 2021
+Theme URI: https://github.com/wcus/wcus-2021
+Author: WCUS Organizers
+Description: A block-based theme for WCUS.
+Requires at least: 5.8
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: campsite-2017
+
+The WordCamp US 2021 theme is distributed under the terms of the GNU GPL.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+*/
+
+html {
+	/* stylelint-disable-next-line value-keyword-case */
+	--font--system: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	--wcus--font--body: Inter, var(--font--system); /* stylelint-disable-line value-keyword-case */
+	--wcus--font--header: "Zilla Slab", serif;
+
+	--wcus--font-size--header: 3rem;
+	--wcus--font-size--level-1: 2.25rem;
+	--wcus--font-size--level-2: 2rem;
+	--wcus--font-size--level-3: 1.25rem;
+	--wcus--font-size--level-4: 1rem;
+	--wcus--font-size--body: 1.125rem;
+	--wcus--font-size--small: 1rem;
+
+	--wcus--line-height--body: 1.6;
+	--wcus--line-height--small: 1.4;
+	--wcus--line-height--header: 1.2;
+	--wcus--line-height--uppercase: 1.2;
+
+	--wcus--color--cream: #fffdf4;
+	--wcus--color--tan: #f5f1dc;
+	--wcus--color--sand: #edd991;
+	--wcus--color--evergreen: #192d19;
+	--wcus--color--forest: #262c20; /* Less saturated, for text. */
+	--wcus--color--fern: #83a883;
+	--wcus--color--orange: #f39641;
+	--wcus--color--black: #27231d;
+
+	--wcus--content-width: 60rem;
+}
+
+body,
+body.custom-background.custom-background {
+	background-color: var(--wcus--color--cream);
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url(https://wc-us.org/wp-content/uploads/2021/08/background.svg);
+}
+
+body {
+	margin: 0.5rem;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: var(--wcus--font-size--body);
+	line-height: var(--wcus--line-height--body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--wcus--font--header);
+	font-weight: 400;
+	line-height: var(--wcus--line-height--header);
+}
+
+a {
+	color: var(--wcus--color--orange);
+}
+
+img {
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+input[type="date"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+textarea {
+	padding: 1rem;
+	border: 1px solid var(--wcus--color--sand);
+	font-size: var(--wcus--font-size--body)
+}
+
+input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus {
+		outline: 2px solid var(--wcus--color--fern);
+		border-color: var(--wcus--color--evergreen);
+		box-shadow: none;
+	}
+
+input[type="radio"]:focus, input[type="checkbox"]:focus {
+		outline: none;
+		box-shadow:
+			0 0 0 1px var(--wcus--color--evergreen),
+			0 0 0 3px var(--wcus--color--fern);
+	}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button {
+	padding: 1rem 3rem;
+	background: var(--wcus--color--evergreen);
+	color: var(--wcus--color--cream);
+	border: none;
+	border-radius: 5px;
+	font-size: var(--wcus--font-size--body)
+}
+
+input[type="submit"]:focus,
+	input[type="submit"]:hover,
+	input[type="button"]:focus,
+	input[type="button"]:hover,
+	input[type="reset"]:focus,
+	input[type="reset"]:hover,
+	button:focus,
+	button:hover {
+		background-color: var(--wcus--color--sand);
+		color: var(--wcus--color--forest);
+	}
+
+input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus, button:focus {
+		outline: none;
+		box-shadow:
+			0 0 0 1px var(--wcus--color--evergreen),
+			0 0 0 3px var(--wcus--color--fern);
+	}
+
+/* Header */
+
+.site-header {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	padding: 1rem;
+}
+
+.custom-logo {
+	width: 150px;
+	height: auto;
+}
+
+.main-navigation .menu {
+	list-style: none;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	margin: 0;
+	padding-left: 0
+}
+
+.main-navigation .menu a {
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		padding: 3rem 0.5rem 1rem;
+	}
+
+.main-navigation .menu li:hover > .sub-menu,
+	.main-navigation .menu li.focus > .sub-menu {
+		left: auto;
+	}
+
+.main-navigation .sub-menu {
+	position: absolute;
+	top: 4rem;
+	left: -999em;
+	z-index: 99999;
+	width: 14rem;
+	padding: 0;
+	margin: 1em 0 0;
+	list-style: none;
+	background: var(--wcus--color--tan)
+}
+
+.main-navigation .sub-menu.toggled-on {
+		left: auto;
+	}
+
+.main-navigation .sub-menu::before {
+		content: "";
+		position: absolute;
+		top: -0.5rem;
+		bottom: -0.5rem;
+		left: 3rem;
+		display: block;
+		width: 0;
+		height: 0;
+		border-width: 0 0.5rem 0.5rem;
+		border-color: transparent transparent var(--wcus--color--tan);
+		border-style: solid;
+	}
+
+.main-navigation a {
+	display: inline-block;
+	font-family: var(--wcus--font--body);
+	font-weight: 700;
+	font-size: var(--wcus--font-size--small);
+	line-height: var(--wcus--line-height--uppercase);
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--wcus--color--black)
+}
+
+.main-navigation a:focus,
+	.main-navigation a:hover {
+		text-decoration: underline;
+	}
+
+.main-navigation .sub-menu a {
+	padding: 1rem;
+	text-transform: none;
+	letter-spacing: 0;
+	font-weight: 500;
+}
+
+.main-navigation .menu-item-has-children {
+	position: relative;
+}
+
+.main-navigation .dropdown-toggle {
+	position: absolute;
+	top: 3.5rem;
+	right: 0;
+	padding: 0;
+	height: 0.3125rem;
+	width: 0.625rem;
+	background: transparent url(https://wc-us.org/wp-content/uploads/2019/05/chevron-down-current.svg) no-repeat center;
+	background-size: contain;
+	border: none;
+}
+
+.js .menu-toggle {
+	position: relative;
+	display: none;
+	z-index: 100;
+}
+
+.main-navigation .home-link {
+	display: none;
+}
+
+@media screen and (min-width: 783px) {
+
+	.site-header {
+		position: relative;
+		display: revert;
+		z-index: 100;
+		height: 7rem;
+		padding: 0;
+		overflow: visible;
+	}
+
+	.custom-header {
+		display: none;
+	}
+
+	.main-navigation .home-link {
+		display: revert;
+	}
+
+	.main-navigation .home-link a {
+		display: inline-block;
+		background: url(https://i1.wp.com/us.wordcamp.org/2021/files/2021/08/WCUS-logo.png) no-repeat center;
+		background-size: contain;
+		height: 114px;
+		width: 155px;
+		text-indent: -999em;
+	}
+}
+
+@media screen and (max-width: 782px) {
+
+	.js .menu-toggle {
+		display: inline-block;
+		background: url(https://wc-us.org/wp-content/uploads/2019/05/hamburger.svg) no-repeat center;
+		background-size: 26px 17px;
+		padding: 0;
+		width: 2.5rem;
+		height: 2.875rem;
+		text-indent: -999em;
+		border: 2px solid transparent;
+	}
+
+	.toggled-on .menu-toggle {
+		background-image: url(https://wc-us.org/wp-content/uploads/2019/05/cross.svg);
+		background-size: 18px 18px;
+	}
+
+	.main-navigation .menu {
+		display: none;
+		text-align: left;
+	}
+
+	.main-navigation .menu a {
+		padding: 0.5rem 0;
+		text-transform: none;
+		letter-spacing: 0;
+		font-weight: 500;
+	}
+
+	.main-navigation .dropdown-toggle {
+		display: none;
+	}
+
+	.main-navigation.toggled-on .menu {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 1em 2em 2em;
+		background: var(--wcus--color--cream);
+	}
+
+	body.admin-bar .main-navigation.toggled-on .menu {
+		top: 46px;
+	}
+
+	.main-navigation .sub-menu {
+		position: initial;
+		display: revert;
+		background: initial;
+		margin-top: 0;
+		margin-left: 1rem
+	}
+
+		.main-navigation .sub-menu::before {
+			display: none;
+		}
+}
+
+/* Page header */
+
+.entry-header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	padding-top: 2rem;
+	color: var(--wcus--color--cream);
+}
+
+.entry-header::before {
+	content: "";
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	z-index: -1;
+	min-height: 15rem;
+	height: 40vh;
+	max-height: 25rem;
+	width: 100%;
+	background: var(--wcus--color--forest);
+}
+
+article:not(.has-post-thumbnail) .entry-header {
+	min-height: 13rem;
+	height: calc(40vh - 2rem);
+	max-height: 23rem;
+	justify-content: flex-start;
+}
+
+.has-post-thumbnail .entry-header::before {
+	min-height: 30rem;
+	height: 50vh;
+	max-height: 40rem;
+}
+
+.entry-title {
+	margin-bottom: 0;
+	margin-top: 8rem;
+	font-size: var(--wcus--font-size--header);
+	line-height: var(--wcus--line-height--header);
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	width: 100%
+}
+
+.entry-title a {
+		color: currentColor;
+		text-decoration: none;
+	}
+
+.entry-title a:hover,
+	.entry-title a:focus {
+		text-decoration: underline;
+	}
+
+.entry-meta {
+	margin-bottom: 4rem;
+	margin-top: 1rem;
+	width: 100%;
+	text-align: center;
+	color: var(--wcus--color--fern);
+	font-size: var(--wcus--font-size--small)
+}
+
+.entry-meta a {
+		color: currentColor;
+	}
+
+.entry-image {
+	order: 3;
+	margin: 0 auto;
+	max-width: var(--wcus--content-width);
+}
+
+.heading-size-1,
+.entry-title {
+	font-weight: 200;
+}
+
+.entry-content {
+	margin: 6rem auto 0;
+	max-width: var(--wcus--content-width)
+}
+
+.entry-content a {
+		text-decoration-thickness: 0.125rem;
+	}
+
+.entry-footer {
+	margin: 2rem auto 6rem;
+	max-width: var(--wcus--content-width);
+	font-size: var(--wcus--font-size--small)
+}
+
+.entry-footer span + span {
+		margin-left: 1rem;
+	}
+
+.post-navigation {
+	margin-bottom: 6rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--wcus--content-width);
+}
+
+.post-navigation .nav-links {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.post-navigation .nav-next {
+	grid-column: 2;
+	text-align: right;
+}
+
+.post-navigation .nav-prev {
+	grid-column: 1;
+}
+
+.comments-area {
+	margin: 6rem auto 0;
+	max-width: var(--wcus--content-width);
+}
+
+.comment-list {
+	margin-bottom: 4rem;
+	padding: 0;
+	list-style: none;
+}
+
+.comment-list .children {
+	margin-top: -2rem;
+	padding: 1rem 0 1rem 2rem;
+	list-style: none;
+}
+
+.comment-list .avatar {
+	float: left;
+	margin-right: 1rem;
+	margin-top: 0.5rem;
+}
+
+.comment-body {
+	margin-bottom: 2rem;
+}
+
+.comment-meta {
+	font-size: 0.875rem;
+}
+
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.comment-reply-link {
+	font-size: var(--wcus--font-size--small);
+}
+
+#cancel-comment-reply-link {
+	margin-left: 0.5rem;
+}
+
+.comment-form label {
+	display: block;
+}
+
+.comment-form input,
+.comment-form textarea {
+	width: 66%;
+}
+
+.comment-form-cookies-consent label {
+	display: inline;
+}
+
+.comment-form-cookies-consent input {
+	width: 16px;
+	height: 16px;
+	margin-right: 0.5rem;
+}
+
+.form-submit input {
+	width: auto;
+}
+
+/* Cookie notice */
+
+body .widget_eu_cookie_law_widget {
+	left: auto;
+	right: 1em;
+}
+
+body #eu-cookie-law {
+	padding: 0.5rem 0.5rem 3rem;
+	position: relative;
+	max-width: 24rem;
+	background: var(--wcus--color--cream);
+	border: 1px solid var(--wcus--color--sand);
+	font-size: 0.875rem;
+}
+
+body #eu-cookie-law input[type="submit"] {
+	position: absolute;
+	bottom: 0.5rem;
+	right: 0.5rem;
+	float: none;
+	background: var(--wcus--color--evergreen);
+	color: var(--wcus--color--cream);
+	font-size: 0.875rem;
+	border: none;
+	border-radius: 5px
+}
+
+body #eu-cookie-law input[type="submit"]:focus,
+	body #eu-cookie-law input[type="submit"]:hover {
+		background-color: var(--wcus--color--sand);
+		color: var(--wcus--color--forest);
+	}
+
+body #eu-cookie-law input[type="submit"]:focus {
+		outline: none;
+		box-shadow:
+			0 0 0 1px var(--wcus--color--evergreen),
+			0 0 0 3px var(--wcus--color--fern);
+	}
+
+/* Footer */
+
+.site-footer {
+	padding: 2rem;
+	background: var(--wcus--color--evergreen);
+	color: var(--wcus--color--cream);
+	font-size: var(--wcus--font-size--small);
+}
+
+.site-footer a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+.site-footer a:hover {
+	color: currentColor;
+	text-decoration: underline;
+}
+
+.site-footer .site-info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-footer .site-info-generator {
+	margin-right: 1rem;
+	font-weight: 500;
+}
+
+.site-footer .site-info-network {
+	margin-left: auto;
+}
+
+.site-footer .privacy-policy-link {
+	margin-left: 1rem;
+}
+
+/* Buttons */
+
+.wp-block-button__link {
+	background-color: var(--wcus--color--evergreen);
+	color: var(--wcus--color--cream);
+}
+
+.wp-block-button__link:active,
+.wp-block-button__link:focus,
+.wp-block-button__link:hover,
+.wp-block-button__link:visited {
+	background-color: var(--wcus--color--fern);
+	color: var(--wcus--color--forest);
+}
+
+.wp-block-button__link:focus {
+	outline: none;
+	box-shadow:
+		0 0 0 1px var(--wcus--color--cream),
+		0 0 0 3px var(--wcus--color--evergreen);
+}
+
+/* Tickets */
+
+#tix {
+	max-width: 78rem;
+	width: calc(100vw - 8rem);
+}
+
+#tix table {
+	background-color: #fffdf4;
+}
+
+#tix td,
+#tix th {
+	border: none;
+}
+
+#tix select {
+	border: revert;
+}
+
+.tix-column-remaining {
+	display: none;
+}
+
+.tix-tickets-list .tix-column-description {
+	font-weight: 700;
+}
+
+.tix-tickets-list .tix-ticket-title {
+	font-weight: 400;
+}
+
+.tix-column-quantity {
+	text-align: right;
+}
+
+.tix-ticket-form input[type="text"],
+	.tix-ticket-form input[type="email"],
+	.tix-ticket-form input[type="url"],
+	.tix-ticket-form textarea,
+	.tix-private-form input[type="text"],
+	.tix-private-form input[type="email"],
+	.tix-private-form input[type="url"],
+	.tix-private-form textarea,
+	.tix-attendee-form input[type="text"],
+	.tix-attendee-form input[type="email"],
+	.tix-attendee-form input[type="url"],
+	.tix-attendee-form textarea,
+	.tix-receipt-form input[type="text"],
+	.tix-receipt-form input[type="email"],
+	.tix-receipt-form input[type="url"],
+	.tix-receipt-form textarea {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+.tix-ticket-form label, .tix-private-form label, .tix-attendee-form label, .tix-receipt-form label {
+		margin-bottom: 0;
+	}
+
+.tix-ticket-form .tix-right br, .tix-private-form .tix-right br, .tix-attendee-form .tix-right br, .tix-receipt-form .tix-right br {
+		display: none;
+	}
+
+.tix-ticket-form .tix-right label, .tix-private-form .tix-right label, .tix-attendee-form .tix-right label, .tix-receipt-form .tix-right label {
+		margin-bottom: 1rem;
+	}
+
+.tix-row-first-name td, .tix-row-last-name td, .tix-row-email td, .tix-row-question-616 td, .tix-row-question-617 td, .tix-row-question-618 td, .tix-row-question-619 td, .tix-row-question-620 td, .tix-row-question-621 td {
+		vertical-align: middle;
+	}
+
+/* override the spacing offset. */
+
+body.admin-bar #tix {
+	padding-top: 0;
+}
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	        clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: var(--page-background);
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	-webkit-clip-path: none;
+	        clip-path: none;
+	color: var(--main-color);
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+/* Do not show the outline on the skip link target. */
+
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}

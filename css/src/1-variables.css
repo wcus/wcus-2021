@@ -1,0 +1,30 @@
+html {
+	/* stylelint-disable-next-line value-keyword-case */
+	--font--system: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	--wcus--font--body: Inter, var(--font--system); /* stylelint-disable-line value-keyword-case */
+	--wcus--font--header: "Zilla Slab", serif;
+
+	--wcus--font-size--header: 3rem;
+	--wcus--font-size--level-1: 2.25rem;
+	--wcus--font-size--level-2: 2rem;
+	--wcus--font-size--level-3: 1.25rem;
+	--wcus--font-size--level-4: 1rem;
+	--wcus--font-size--body: 1.125rem;
+	--wcus--font-size--small: 1rem;
+
+	--wcus--line-height--body: 1.6;
+	--wcus--line-height--small: 1.4;
+	--wcus--line-height--header: 1.2;
+	--wcus--line-height--uppercase: 1.2;
+
+	--wcus--color--cream: #fffdf4;
+	--wcus--color--tan: #f5f1dc;
+	--wcus--color--sand: #edd991;
+	--wcus--color--evergreen: #192d19;
+	--wcus--color--forest: #262c20; /* Less saturated, for text. */
+	--wcus--color--fern: #83a883;
+	--wcus--color--orange: #f39641;
+	--wcus--color--black: #27231d;
+
+	--wcus--content-width: 60rem;
+}
