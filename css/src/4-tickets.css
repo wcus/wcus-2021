@@ -37,7 +37,8 @@
 	}
 
 	& .tix-right label {
-		margin-bottom: 1rem;
+		display: block;
+		margin-bottom: 0.75rem;
 	}
 }
 
@@ -54,6 +55,10 @@
 	& td {
 		vertical-align: middle;
 	}
+}
+
+#tix .tix-submit .tix-checkout-button {
+	padding: 1rem *;
 }
 
 /* override the spacing offset. */

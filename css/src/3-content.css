@@ -80,6 +80,17 @@ article:not(.has-post-thumbnail) .entry-header {
 	}
 }
 
+.entry-content::before,
+.entry-content::after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.entry-content::after {
+	clear: both;
+}
+
 .entry-footer {
 	margin: 2rem auto 6rem;
 	max-width: var(--wcus--content-width);
