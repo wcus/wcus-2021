@@ -9,7 +9,7 @@ body.custom-background.custom-background {
 }
 
 body {
-	margin: 0.5rem;
+	margin: 0.75rem;
 	font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: var(--wcus--font-size--body);
 	line-height: var(--wcus--line-height--body);
