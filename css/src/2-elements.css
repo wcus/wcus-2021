@@ -29,10 +29,11 @@ h6 {
 
 a {
 	color: #517451;
+	text-decoration-thickness: 0.0625rem;
 
 	&:hover,
 	&:focus {
-		text-decoration-thickness: 2px;
+		text-decoration-thickness: 0.125rem;
 	}
 }
 

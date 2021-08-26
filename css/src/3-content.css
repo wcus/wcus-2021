@@ -77,6 +77,11 @@ article:not(.has-post-thumbnail) .entry-header {
 
 	& a {
 		text-decoration-thickness: 0.125rem;
+
+		&:hover,
+		&:focus {
+			text-decoration-thickness: 0.1875rem;
+		}
 	}
 }
 

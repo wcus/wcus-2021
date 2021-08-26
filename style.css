@@ -84,12 +84,13 @@ h6 {
 }
 
 a {
-	color: #517451
+	color: #517451;
+	text-decoration-thickness: 0.0625rem
 }
 
 a:hover,
 	a:focus {
-		text-decoration-thickness: 2px;
+		text-decoration-thickness: 0.125rem;
 	}
 
 img {
@@ -480,8 +481,13 @@ article:not(.has-post-thumbnail) .entry-header {
 }
 
 .entry-content a {
-		text-decoration-thickness: 0.125rem;
+		text-decoration-thickness: 0.125rem
 	}
+
+.entry-content a:hover,
+		.entry-content a:focus {
+			text-decoration-thickness: 0.1875rem;
+		}
 
 .entry-content::before,
 .entry-content::after {
