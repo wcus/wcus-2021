@@ -41,7 +41,7 @@ body #eu-cookie-law input[type="submit"] {
 /* Footer */
 .site-footer {
 	margin-top: 4rem;
-	padding: 2rem;
+	padding: 4rem;
 	background: var(--wcus--color--evergreen);
 	color: var(--wcus--color--cream);
 	font-size: var(--wcus--font-size--small);
@@ -55,6 +55,13 @@ body #eu-cookie-law input[type="submit"] {
 .site-footer a:hover {
 	color: currentColor;
 	text-decoration: underline;
+}
+
+#footer-widget-2 {
+	display: grid;
+	margin: 0 auto 4rem;
+	max-width: var(--wcus--content-width--large);
+	grid-template-columns: repeat(3, 1fr);
 }
 
 .site-footer .site-info {

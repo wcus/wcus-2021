@@ -22,3 +22,15 @@
 .wp-block-table.is-style-stripes tbody tr:nth-child(2n+1) {
 	background-color: var(--wcus--color--tan);
 }
+
+.wp-block-search .wp-block-search__input {
+	background: var(--wcus--color--cream);
+	border-color: var(--wcus--color--tan);
+	color: var(--wcus--color--evergreen);
+}
+
+.wp-block-search .wp-block-search__button {
+	background: var(--wcus--color--orange);
+	color: var(--wcus--color--forest);
+	border: none;
+}
