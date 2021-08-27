@@ -1,4 +1,25 @@
 /* Tickets */
+
+/* override the spacing offset. */
+body.admin-bar #tix {
+	padding-top: 0;
+}
+
+#tix {
+	margin: * calc(50% - 50vw + 0.75rem);
+	max-width: calc(100vw - 1.5rem);
+	width: calc(100vw - 1.5rem);
+}
+
+@media (min-width: 60rem) { /* === --wcus--content-width--med */
+
+	#tix {
+		margin: * calc((var(--wcus--content-width) - var(--wcus--content-width--med)) / 2);
+		max-width: var(--wcus--content-width--med);
+		width: var(--wcus--content-width--med);
+	}
+}
+
 .tix-column-remaining {
 	display: none;
 }
@@ -59,9 +80,4 @@
 
 #tix .tix-submit .tix-checkout-button {
 	padding: 1rem *;
-}
-
-/* override the spacing offset. */
-body.admin-bar #tix {
-	padding-top: 0;
 }

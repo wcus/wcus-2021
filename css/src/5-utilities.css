@@ -9,20 +9,21 @@
 
 .alignfull > * {
 	margin: * auto;
-	max-width: 87.5rem;
+	max-width: var(--wcus--content-width--large);
 }
 
 .alignfull.wp-block-cover.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container {
 	width: 100%;
-	margin: * auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-@media (min-width: 87.5rem) {
+@media (min-width: 87.5rem) { /* === --wcus--content-width--large */
 
 	.alignwide {
-		margin: * -13.75rem;
-		max-width: 87.5rem;
-		width: 87.5rem;
+		margin: * calc((var(--wcus--content-width) - var(--wcus--content-width--large)) / 2);
+		max-width: var(--wcus--content-width--large);
+		width: var(--wcus--content-width--large);
 	}
 }
 

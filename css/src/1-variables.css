@@ -27,5 +27,7 @@ html {
 	--wcus--color--orange: #f39641;
 	--wcus--color--black: #27231d;
 
-	--wcus--content-width: 60rem;
+	--wcus--content-width: 32.5rem;
+	--wcus--content-width--med: 60rem;
+	--wcus--content-width--large: 87.5rem;
 }

@@ -1,0 +1,38 @@
+/* News page */
+
+body.blog {
+
+	& .page-title {
+		box-sizing: border-box;
+		position: static !important;
+		clip: revert;
+		clip-path: revert;
+		overflow: revert;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0;
+		padding: * 2rem;
+		height: 18rem;
+		width: 100%;
+		background: var(--wcus--color--forest);
+		color: var(--wcus--color--cream);
+		text-align: center;
+	}
+
+	& article.post {
+		padding-bottom: 8rem;
+		background-image: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/border.svg);
+		background-repeat: no-repeat;
+		background-position: bottom center;
+		background-size: 960px 7px;
+	}
+
+	& article.post:last-of-type {
+		background: none;
+	}
+
+	& .entry-footer {
+		display: none;
+	}
+}
