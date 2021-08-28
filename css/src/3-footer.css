@@ -48,21 +48,121 @@ body #eu-cookie-law input[type="submit"] {
 }
 
 .site-footer a {
-	color: currentColor;
+	color: var(--wcus--color--fern);
 	text-decoration: none;
 }
 
 .site-footer a:hover {
-	color: currentColor;
+	color: var(--wcus--color--fern);
 	text-decoration: underline;
 }
+
+/* Widgets */
 
 #footer-widget-2 {
 	display: grid;
 	margin: 0 auto 4rem;
 	max-width: var(--wcus--content-width--large);
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 4fr 2fr 2fr 3fr;
+	gap: 2rem;
 }
+
+@media (max-width: 960px) {
+
+	#footer-widget-2 {
+		grid-template-columns: repeat(3, 1fr);
+
+		& section:nth-of-type(1) {
+			grid-column: 1 / span 2;
+		}
+
+		& section:nth-of-type(n+2) {
+			grid-row: 2;
+		}
+	}
+}
+
+@media (max-width: 782px) {
+
+	#footer-widget-2 {
+
+		& section:nth-of-type(1) {
+			grid-column: 1 / span 3;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+
+	#footer-widget-2 {
+		display: block;
+
+		& section + section {
+			margin-top: 2rem;
+		}
+	}
+}
+
+.footer-widgets-block h2 {
+	margin: 0 0 1rem;
+}
+
+.footer-widgets-block .widget_nav_menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.footer-widgets-block input[type="email"],
+.footer-widgets-block input[type="search"],
+.footer-widgets-block input[type="tel"],
+.footer-widgets-block input[type="text"] {
+	background: rgba(var(--wcus--color--tan--rgb) / 0.05);
+	border-color: var(--wcus--color--fern);
+	border-radius: 5px 0 0 5px;
+	border-right-width: 0;
+	color: var(--wcus--color--cream);
+}
+
+.footer-widgets-block input[type="submit"],
+.footer-widgets-block input[type="button"],
+.footer-widgets-block input[type="reset"],
+.footer-widgets-block button {
+	margin-left: 0 !important;
+	border-radius: 0 5px 5px 0;
+	font-size: var(--wcus--font-size--small);
+	font-weight: 500;
+}
+
+.footer-widgets-block .wp-block-social-links {
+	margin: 0;
+
+	& li {
+		background: var(--wcus--color--orange) !important;
+		color: var(--wcus--color--forest) !important;
+		border-radius: 5px;
+	}
+
+	& a {
+		padding: 0.5rem;
+	}
+
+	& li:hover {
+		background: var(--wcus--color--tan) !important;
+	}
+
+	& li:focus-within {
+		box-shadow:
+			0 0 0 1px var(--wcus--color--evergreen),
+			0 0 0 3px var(--wcus--color--cream);
+	}
+
+	& a:focus {
+		outline: none;
+	}
+}
+
+/* Site information */
 
 .site-footer .site-info {
 	display: flex;
@@ -72,6 +172,7 @@ body #eu-cookie-law input[type="submit"] {
 .site-footer .site-info-generator {
 	margin-right: 1rem;
 	font-weight: 500;
+	color: currentColor;
 }
 
 .site-footer .site-info-network {
