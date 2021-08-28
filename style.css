@@ -469,16 +469,19 @@ tbody td {
 	max-width: var(--wcus--content-width--med);
 }
 
+.page-content,
 .entry-content {
 	margin: 0 auto;
 	max-width: var(--wcus--content-width)
 }
 
-.entry-content a {
+.page-content a, .entry-content a {
 		text-decoration-thickness: 0.125rem
 	}
 
-.entry-content a:hover,
+.page-content a:hover,
+		.page-content a:focus,
+		.entry-content a:hover,
 		.entry-content a:focus {
 			text-decoration-thickness: 0.1875rem;
 		}
@@ -597,6 +600,27 @@ body.single .entry-title, body.page .entry-title {
 body.single .entry-meta, body.page .entry-meta {
 		color: var(--wcus--color--fern);
 	}
+
+body.archive .page-header,
+body.error404 .page-header {
+	box-sizing: border-box;
+	position: static !important;
+	clip: revert;
+	-webkit-clip-path: revert;
+	        clip-path: revert;
+	overflow: revert;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	height: 18rem;
+	width: 100%;
+	background: var(--wcus--color--forest);
+	color: var(--wcus--color--cream);
+	text-align: center;
+}
 
 .comments-area {
 	margin: 6rem auto 0;
