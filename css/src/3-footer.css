@@ -41,7 +41,6 @@ body #eu-cookie-law input[type="submit"] {
 /* Footer */
 .site-footer {
 	margin-top: 4rem;
-	padding: 4rem;
 	background: var(--wcus--color--evergreen);
 	color: var(--wcus--color--cream);
 	font-size: var(--wcus--font-size--small);
@@ -59,9 +58,69 @@ body #eu-cookie-law input[type="submit"] {
 
 /* Widgets */
 
+#footer-widget-1 {
+	padding: 4rem;
+	background: var(--wcus--color--tan);
+	color: var(--wcus--color--forest);
+
+	& > * {
+		margin: 0 auto;
+		max-width: var(--wcus--content-width--large);
+	}
+}
+
+#footer-widget-1 .wp-block-button__link {
+	color: var(--wcus--color--cream);
+
+	&:active,
+	&:focus,
+	&:hover,
+	&:visited {
+		color: var(--wcus--color--forest);
+	}
+}
+
+.footer-widgets-block .wordcamp-sponsors {
+	margin: 0;
+	padding: 0;
+	gap: 1rem;
+
+	& .wordcamp-post-list__post {
+		overflow: visible;
+		display: flex;
+		margin-bottom: 1rem;
+	}
+
+	& .wordcamp-post-list__post div {
+		display: flex;
+		width: 100%;
+	}
+
+	& a {
+		display: flex;
+		padding: 0.75rem;
+		width: 100%;
+		background: var(--wcus--color--cream);
+		align-items: center;
+	}
+
+	& img {
+		display: block;
+		margin: auto;
+	}
+
+	& a:focus {
+		outline: none;
+		box-shadow:
+			0 0 0 1px var(--wcus--color--evergreen),
+			0 0 0 3px var(--wcus--color--fern);
+	}
+}
+
 #footer-widget-2 {
 	display: grid;
-	margin: 0 auto 4rem;
+	margin: 0 auto;
+	padding: 4rem;
 	max-width: var(--wcus--content-width--large);
 	grid-template-columns: 4fr 2fr 2fr 3fr;
 	gap: 2rem;
@@ -166,6 +225,8 @@ body #eu-cookie-law input[type="submit"] {
 
 .site-footer .site-info {
 	display: flex;
+	margin: 0 auto;
+	padding: 4rem;
 	justify-content: space-between;
 }
 
