@@ -110,21 +110,27 @@ a.more-link {
 	}
 }
 
+.posts-navigation,
 .post-navigation {
 	margin: * auto 6rem;
+	padding: 2rem;
 	max-width: var(--wcus--content-width--med);
+	background: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/star.svg) no-repeat center;
 }
 
+.posts-navigation .nav-links,
 .post-navigation .nav-links {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
 
+.posts-navigation .nav-next,
 .post-navigation .nav-next {
 	grid-column: 2;
 	text-align: right;
 }
 
+.posts-navigation .nav-prev,
 .post-navigation .nav-prev {
 	grid-column: 1;
 }
