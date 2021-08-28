@@ -111,7 +111,7 @@ a.more-link {
 
 .post-navigation {
 	margin: * auto 6rem;
-	max-width: var(--wcus--content-width);
+	max-width: var(--wcus--content-width--med);
 }
 
 .post-navigation .nav-links {

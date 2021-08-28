@@ -1,6 +1,6 @@
 .comments-area {
 	margin: 6rem auto 0;
-	max-width: var(--wcus--content-width);
+	max-width: var(--wcus--content-width--med);
 }
 
 .comment-list {
