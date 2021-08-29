@@ -180,6 +180,10 @@ body.page {
 	& .entry-meta {
 		color: var(--wcus--color--fern);
 	}
+
+	& .entry-content {
+		margin-top: 2rem;
+	}
 }
 
 body.archive .page-header,

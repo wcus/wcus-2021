@@ -35,3 +35,10 @@
 	color: var(--wcus--color--forest);
 	border: none;
 }
+
+@media (max-width: 599px) {
+
+	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column .wp-block-buttons.is-content-justification-right {
+		justify-content: flex-start;
+	}
+}

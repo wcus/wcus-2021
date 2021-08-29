@@ -161,6 +161,7 @@
 	.main-navigation .menu {
 		display: none;
 		text-align: left;
+		z-index: 10;
 	}
 
 	.main-navigation .menu a {

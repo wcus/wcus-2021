@@ -101,8 +101,8 @@
 }
 
 .home-section-news .wp-block-query .wp-block-post-featured-image {
-	max-height: 290px;
 	overflow: hidden;
+	aspect-ratio: 16 / 9;
 }
 
 .home-section-news .wp-block-query .wp-block-post-title {
@@ -127,6 +127,10 @@ body.home .site-footer {
 		display: block;
 		margin-right: 0;
 		margin-bottom: 0.75rem;
+	}
+
+	.home-section-about {
+		padding: * 0 !important;
 	}
 
 	.home-section-expect .wp-block-columns .wp-block-columns {
