@@ -1085,6 +1085,10 @@ body #eu-cookie-law input[type="submit"]:focus {
 	font-size: 1rem;
 }
 
+body.home .entry-content {
+	margin-top: 0;
+}
+
 body.home .entry-footer {
 	display: none;
 }
