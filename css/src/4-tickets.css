@@ -1,0 +1,83 @@
+/* Tickets */
+
+/* override the spacing offset. */
+body.admin-bar #tix {
+	padding-top: 0;
+}
+
+#tix {
+	margin: * calc(50% - 50vw + 0.75rem);
+	max-width: calc(100vw - 1.5rem);
+	width: calc(100vw - 1.5rem);
+}
+
+@media (min-width: 60rem) { /* === --wcus--content-width--med */
+
+	#tix {
+		margin: * calc((var(--wcus--content-width) - var(--wcus--content-width--med)) / 2);
+		max-width: var(--wcus--content-width--med);
+		width: var(--wcus--content-width--med);
+	}
+}
+
+.tix-column-remaining {
+	display: none;
+}
+
+.tix-tickets-list .tix-column-description {
+	font-weight: 700;
+}
+
+.tix-tickets-list .tix-ticket-title {
+	font-weight: 400;
+}
+
+.tix-column-quantity {
+	text-align: right;
+}
+
+.tix-ticket-form,
+.tix-private-form,
+.tix-attendee-form,
+.tix-receipt-form {
+
+	& input[type="text"],
+	& input[type="email"],
+	& input[type="url"],
+	& textarea {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	& label {
+		margin-bottom: 0;
+	}
+
+	& .tix-right br {
+		display: none;
+	}
+
+	& .tix-right label {
+		display: block;
+		margin-bottom: 0.75rem;
+	}
+}
+
+.tix-row-first-name,
+.tix-row-last-name,
+.tix-row-email,
+.tix-row-question-616,
+.tix-row-question-617,
+.tix-row-question-618,
+.tix-row-question-619,
+.tix-row-question-620,
+.tix-row-question-621 {
+
+	& td {
+		vertical-align: middle;
+	}
+}
+
+#tix .tix-submit .tix-checkout-button {
+	padding: 1rem *;
+}

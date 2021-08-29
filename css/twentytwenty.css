@@ -1,0 +1,234 @@
+/*
+Theme Name: WCUS 2021
+Theme URI: https://github.com/wcus/wcus-2021
+Author: WCUS Organizers
+Description: A block-based theme for WCUS.
+Requires at least: 5.8
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: twentytwenty
+
+The WordCamp US 2021 theme is distributed under the terms of the GNU GPL.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+*/
+
+body {
+	background-color: #fffdf4;
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url(https://wc-us.org/wp-content/uploads/2021/08/background.svg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-content cite,
+.entry-content figcaption,
+.entry-content table,
+.entry-content address,
+.entry-content .wp-caption-text,
+.entry-content .wp-block-file {
+	font-family: "Zilla Slab", serif;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 1;
+}
+
+.heading-size-1,
+.entry-title {
+	font-weight: 200;
+}
+
+.entry-content {
+	font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+@media (min-width: 700px) {
+
+	.entry-content p,
+	.entry-content li {
+		line-height: 1.6;
+	}
+}
+
+body:not(.overlay-header) .primary-menu > li > a,
+body:not(.overlay-header) .primary-menu > li > .icon,
+.modal-menu a,
+.footer-menu a,
+.footer-widgets a,
+#site-footer .wp-block-button.is-style-outline,
+.wp-block-pullquote::before,
+.color-accent,
+.color-accent-hover:hover,
+.color-accent-hover:focus,
+:root .has-accent-color,
+.has-drop-cap:not(:focus)::first-letter,
+.wp-block-button.is-style-outline,
+a {
+	color: #192d19;
+}
+
+button,
+.button,
+.faux-button,
+.wp-block-button__link,
+.wp-block-file .wp-block-file__button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.bg-accent,
+.bg-accent-hover:hover,
+.bg-accent-hover:focus,
+:root .has-accent-background-color,
+.comment-reply-link {
+	background-color: #192d19;
+}
+
+.site-description,
+#site-header a,
+#site-footer a,
+.menu-modal a,
+.modal-menu a,
+.menu-modal-inner a,
+.search-modal-inner a,
+.footer-menu a,
+.footer-widgets a,
+.footer-nav-widgets-wrapper a,
+.archive-header a,
+.singular .entry-header a,
+.singular .featured-media a,
+.wp-block-pullquote a,
+body:not(.overlay-header) .primary-menu > li > a,
+body:not(.overlay-header) .primary-menu > li > .icon,
+.header-footer-group .color-accent,
+.header-footer-group .color-accent-hover:hover,
+.singular:not(.overlay-header) .entry-header a {
+	color: #f5f1dc;
+}
+
+body:not(.overlay-header) .toggle-inner .toggle-text,
+.powered-by-wordpress,
+.to-the-top,
+.singular .entry-header .post-meta,
+.singular:not(.overlay-header) .entry-header .post-meta a {
+	color: #83a883;
+}
+
+.wp-block-jetpack-button button {
+	height: auto;
+}
+
+body:not(.overlay-header) .primary-menu ul {
+	background-color: #f5f1dc;
+}
+
+body:not(.overlay-header) .primary-menu ul a {
+	color: #192d19 !important;
+}
+
+body:not(.overlay-header) .primary-menu > li > ul::after {
+	border-bottom-color: #f5f1dc;
+}
+
+/* Tickets */
+#tix {
+	max-width: 78rem;
+	width: calc(100vw - 8rem);
+}
+
+#tix table {
+	background-color: #fffdf4;
+}
+
+#tix td,
+#tix th {
+	border: none;
+}
+
+#tix select {
+	border: revert;
+}
+
+.tix-column-remaining {
+	display: none;
+}
+
+.tix-tickets-list .tix-column-description {
+	font-weight: 700;
+}
+
+.tix-tickets-list .tix-ticket-title {
+	font-weight: 400;
+}
+
+.tix-column-quantity {
+	text-align: right;
+}
+
+.tix-ticket-form,
+.tix-private-form,
+.tix-attendee-form,
+.tix-receipt-form {
+
+	& input[type="text"],
+	& input[type="email"],
+	& input[type="url"],
+	& textarea {
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	& label {
+		margin-bottom: 0;
+	}
+
+	& .tix-right br {
+		display: none;
+	}
+
+	& .tix-right label {
+		margin-bottom: 1rem;
+	}
+}
+
+.tix-row-first-name,
+.tix-row-last-name,
+.tix-row-email,
+.tix-row-question-616,
+.tix-row-question-617,
+.tix-row-question-618,
+.tix-row-question-619,
+.tix-row-question-620,
+.tix-row-question-621 {
+
+	& td {
+		vertical-align: middle;
+	}
+}
+
+/* override the spacing offset. */
+body.admin-bar #tix {
+	padding-top: 0;
+}

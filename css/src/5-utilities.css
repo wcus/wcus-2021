@@ -1,0 +1,75 @@
+/* Alignments */
+
+.alignfull,
+.alignwide {
+	margin: * calc(50% - 50vw + 0.75rem);
+	max-width: calc(100vw - 1.5rem);
+	width: calc(100vw - 1.5rem);
+}
+
+.alignfull > * {
+	margin: * auto;
+	max-width: var(--wcus--content-width--large);
+}
+
+.alignfull.wp-block-cover.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 60rem) { /* === --wcus--content-width--med */
+
+	.alignwide {
+		margin: * calc((var(--wcus--content-width) - var(--wcus--content-width--med)) / 2);
+		max-width: var(--wcus--content-width--med);
+		width: var(--wcus--content-width--med);
+	}
+}
+
+/* Colors */
+
+.has-background {
+	padding: 1rem;
+}
+
+.has-background.alignfull,
+.has-background.alignwide {
+	padding: 3rem;
+}
+
+:root .has-luminous-vivid-orange-background-color {
+	background-color: var(--wcus--color--orange);
+	color: var(--wcus--color--forest);
+}
+
+:root .has-luminous-vivid-amber-background-color {
+	background-color: var(--wcus--color--sand);
+	color: var(--wcus--color--forest);
+}
+
+:root .has-light-green-cyan-background-color {
+	background-color: var(--wcus--color--fern);
+	color: var(--wcus--color--forest);
+}
+
+:root .has-vivid-green-cyan-background-color {
+	background-color: var(--wcus--color--evergreen);
+	color: var(--wcus--color--cream);
+}
+
+:root .has-luminous-vivid-orange-color {
+	color: var(--wcus--color--orange);
+}
+
+:root .has-luminous-vivid-amber-color {
+	color: var(--wcus--color--sand);
+}
+
+:root .has-light-green-cyan-color {
+	color: var(--wcus--color--fern);
+}
+
+:root .has-vivid-green-cyan-color {
+	color: var(--wcus--color--evergreen);
+}

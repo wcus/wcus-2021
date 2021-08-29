@@ -1,0 +1,19 @@
+{
+  "name": "wcus-2021",
+  "scripts": {
+    "build": "postcss css/style.css css/twentytwenty.css --dir ./ --no-map",
+    "start": "postcss css/style.css css/twentytwenty.css --dir ./ --watch",
+    "lint": "stylelint css"
+  },
+  "browserslist": "> 1% and not ie <= 11",
+  "dependencies": {
+    "@wordpress/stylelint-config": "19.1.0",
+    "autoprefixer": "10.3.2",
+    "postcss": "8.3.6",
+    "postcss-cli": "8.3.1",
+    "postcss-import": "14.0.2",
+    "postcss-nesting": "^8.0.1",
+    "postcss-short": "5.0.0",
+    "stylelint": "13.13.1"
+  }
+}
