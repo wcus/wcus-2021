@@ -176,7 +176,7 @@ body #eu-cookie-law input[type="submit"] {
 .footer-widgets-block input[type="search"],
 .footer-widgets-block input[type="tel"],
 .footer-widgets-block input[type="text"] {
-	background: rgba(var(--wcus--color--tan--rgb) / 0.05);
+	background: rgb(var(--wcus--color--tan--rgb) / 0.05);
 	border-color: var(--wcus--color--fern);
 	border-radius: 5px 0 0 5px;
 	border-right-width: 0;

@@ -15,5 +15,8 @@
     "postcss-nesting": "^8.0.1",
     "postcss-short": "5.0.0",
     "stylelint": "13.13.1"
+  },
+  "devDependencies": {
+    "postcss-custom-properties": "^11.0.0"
   }
 }
