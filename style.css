@@ -158,18 +158,15 @@ thead {
 	text-align: left;
 }
 
-tr {
-
-	th:first-child,
-	td:first-child {
+tr th:first-child,
+	tr td:first-child {
 		padding-left: 0;
 	}
 
-	th:last-child,
-	td:last-child {
+tr th:last-child,
+	tr td:last-child {
 		padding-right: 0;
 	}
-}
 
 td,
 th {
