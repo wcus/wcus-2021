@@ -760,7 +760,8 @@ body #eu-cookie-law input[type="submit"]:focus {
 .footer-widgets-block .wordcamp-sponsors {
 	margin: 0;
 	padding: 0;
-	gap: 1rem
+	grid-row-gap: 1rem;
+	grid-column-gap: 1rem
 }
 
 .footer-widgets-block .wordcamp-sponsors .wordcamp-post-list__post {
@@ -800,7 +801,8 @@ body #eu-cookie-law input[type="submit"]:focus {
 	padding: 4rem;
 	max-width: 87.5rem;
 	grid-template-columns: 4fr 2fr 2fr 3fr;
-	gap: 2rem;
+	grid-row-gap: 2rem;
+	grid-column-gap: 2rem;
 }
 
 @media (max-width: 960px) {
@@ -1063,7 +1065,8 @@ body #eu-cookie-law input[type="submit"]:focus {
 }
 
 .home-section-news .wp-block-query .is-flex-container {
-	gap: 2rem;
+	grid-row-gap: 2rem;
+	grid-column-gap: 2rem;
 }
 
 .home-section-news .wp-block-post-template.is-flex-container.is-flex-container.columns-3 > li {

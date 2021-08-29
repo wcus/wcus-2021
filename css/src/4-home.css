@@ -91,7 +91,8 @@
 }
 
 .home-section-news .wp-block-query .is-flex-container {
-	gap: 2rem;
+	grid-row-gap: 2rem;
+	grid-column-gap: 2rem;
 }
 
 .home-section-news .wp-block-post-template.is-flex-container.is-flex-container.columns-3 > li {
