@@ -178,21 +178,28 @@ body #eu-cookie-law input[type="submit"] {
 .footer-widgets-block input[type="search"],
 .footer-widgets-block input[type="tel"],
 .footer-widgets-block input[type="text"] {
+	box-sizing: border-box;
+	padding: 1rem !important;
 	background: rgb(var(--wcus--color--tan--rgb) / 0.05);
 	border-color: var(--wcus--color--fern);
-	border-radius: 5px 0 0 5px;
+	border-radius: 5px 0 0 5px !important;
 	border-right-width: 0;
 	color: var(--wcus--color--cream);
+	font-size: var(--wcus--font-size--small) !important;
 }
 
 .footer-widgets-block input[type="submit"],
 .footer-widgets-block input[type="button"],
 .footer-widgets-block input[type="reset"],
 .footer-widgets-block button {
+	box-sizing: border-box;
 	margin-left: 0 !important;
-	border-radius: 0 5px 5px 0;
-	font-size: var(--wcus--font-size--small);
-	font-weight: 500;
+	padding: 1rem !important;
+	background: var(--wcus--color--orange) !important;
+	color: var(--wcus--color--forest) !important;
+	border-radius: 0 5px 5px 0 !important;
+	font-size: var(--wcus--font-size--small) !important;
+	font-weight: 500 !important;
 }
 
 .footer-widgets-block .wp-block-social-links {
