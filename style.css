@@ -158,16 +158,6 @@ thead {
 	text-align: left;
 }
 
-tr th:first-child,
-	tr td:first-child {
-		padding-left: 0;
-	}
-
-tr th:last-child,
-	tr td:last-child {
-		padding-right: 0;
-	}
-
 td,
 th {
 	padding: 1rem 1.5rem;
@@ -1191,7 +1181,9 @@ body.admin-bar #tix {
 }
 
 .tix-tickets-list .tix-ticket-title {
+	display: block;
 	font-weight: 400;
+	text-align: left;
 }
 
 .tix-column-quantity {

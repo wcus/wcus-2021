@@ -29,7 +29,9 @@ body.admin-bar #tix {
 }
 
 .tix-tickets-list .tix-ticket-title {
+	display: block;
 	font-weight: 400;
+	text-align: left;
 }
 
 .tix-column-quantity {

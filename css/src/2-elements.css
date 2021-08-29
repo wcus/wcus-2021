@@ -128,19 +128,6 @@ thead {
 	text-align: left;
 }
 
-tr {
-
-	& th:first-child,
-	& td:first-child {
-		padding-left: 0;
-	}
-
-	& th:last-child,
-	& td:last-child {
-		padding-right: 0;
-	}
-}
-
 td,
 th {
 	padding: 1rem 1.5rem;
