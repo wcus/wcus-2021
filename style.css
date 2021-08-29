@@ -549,7 +549,7 @@ a.more-link:focus {
 	margin-right: auto;
 	padding: 2rem;
 	max-width: var(--wcus--content-width--med);
-	background: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/star.svg) no-repeat center;
+	background: url(https://wc-us.org/wp-content/uploads/2021/08/star.svg) no-repeat center;
 }
 
 .posts-navigation .nav-links,
@@ -1005,7 +1005,7 @@ body #eu-cookie-law input[type="submit"]:focus {
 }
 
 .homepage-header::before {
-	background: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/map.svg) no-repeat center;
+	background: url(https://wc-us.org/wp-content/uploads/2021/08/map.svg) no-repeat center;
 	background-size: 1400px 918px;
 	opacity: 1 !important;
 }
@@ -1017,7 +1017,7 @@ body #eu-cookie-law input[type="submit"]:focus {
 	position: absolute;
 	width: 7.75rem;
 	height: 7.75rem;
-	background: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/compass-rose.svg) no-repeat center;
+	background: url(https://wc-us.org/wp-content/uploads/2021/08/compass-rose.svg) no-repeat center;
 	background-size: contain;
 }
 
@@ -1054,7 +1054,7 @@ body #eu-cookie-law input[type="submit"]:focus {
 	margin-right: 1rem;
 	width: 9rem;
 	height: 0.75rem;
-	background: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/banner.svg) no-repeat center;
+	background: url(https://wc-us.org/wp-content/uploads/2021/08/banner.svg) no-repeat center;
 	background-size: contain;
 }
 
@@ -1172,7 +1172,7 @@ body.blog .page-title {
 
 body.blog article.post {
 		padding-bottom: 8rem;
-		background-image: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/border.svg);
+		background-image: url(https://wc-us.org/wp-content/uploads/2021/08/border.svg);
 		background-repeat: no-repeat;
 		background-position: bottom center;
 		background-size: 960px 7px;

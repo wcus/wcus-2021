@@ -22,7 +22,7 @@ body.blog {
 
 	& article.post {
 		padding-bottom: 8rem;
-		background-image: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/border.svg);
+		background-image: url(https://wc-us.org/wp-content/uploads/2021/08/border.svg);
 		background-repeat: no-repeat;
 		background-position: bottom center;
 		background-size: 960px 7px;

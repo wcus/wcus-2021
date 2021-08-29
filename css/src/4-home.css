@@ -5,7 +5,7 @@
 }
 
 .homepage-header::before {
-	background: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/map.svg) no-repeat center;
+	background: url(https://wc-us.org/wp-content/uploads/2021/08/map.svg) no-repeat center;
 	background-size: 1400px 918px;
 	opacity: 1 !important;
 }
@@ -15,7 +15,7 @@
 	position: absolute 3rem * * 3rem;
 	width: 7.75rem;
 	height: 7.75rem;
-	background: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/compass-rose.svg) no-repeat center;
+	background: url(https://wc-us.org/wp-content/uploads/2021/08/compass-rose.svg) no-repeat center;
 	background-size: contain;
 }
 
@@ -52,7 +52,7 @@
 	margin-right: 1rem;
 	width: 9rem;
 	height: 0.75rem;
-	background: url(https://us.wordcamp.test/wp-content/themes-private/wcus-2021/assets/banner.svg) no-repeat center;
+	background: url(https://wc-us.org/wp-content/uploads/2021/08/banner.svg) no-repeat center;
 	background-size: contain;
 }
 
