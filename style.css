@@ -839,7 +839,6 @@ body #eu-cookie-law input[type="submit"]:focus {
 .footer-widgets-block input[type="search"],
 .footer-widgets-block input[type="tel"],
 .footer-widgets-block input[type="text"] {
-	box-sizing: border-box;
 	padding: 1rem !important;
 	background: rgb(245 241 220 / 0.05);
 	border-color: #83a883;
@@ -853,7 +852,6 @@ body #eu-cookie-law input[type="submit"]:focus {
 .footer-widgets-block input[type="button"],
 .footer-widgets-block input[type="reset"],
 .footer-widgets-block button {
-	box-sizing: border-box;
 	margin-left: 0 !important;
 	padding: 1rem !important;
 	background: #f39641 !important;
@@ -952,6 +950,15 @@ body #eu-cookie-law input[type="submit"]:focus {
 	color: #262c20;
 	border: none;
 }
+
+.wp-block-jetpack-subscriptions.wp-block-jetpack-subscriptions form[id] { /* Extra specificity. */
+		align-items: center;
+	}
+
+.wp-block-jetpack-subscriptions input,
+	.wp-block-jetpack-subscriptions button {
+		box-sizing: border-box;
+	}
 
 @media (max-width: 599px) {
 

@@ -36,6 +36,18 @@
 	border: none;
 }
 
+.wp-block-jetpack-subscriptions {
+
+	&.wp-block-jetpack-subscriptions form[id] { /* Extra specificity. */
+		align-items: center;
+	}
+
+	& input,
+	& button {
+		box-sizing: border-box;
+	}
+}
+
 @media (max-width: 599px) {
 
 	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column .wp-block-buttons.is-content-justification-right {

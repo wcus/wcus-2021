@@ -178,7 +178,6 @@ body #eu-cookie-law input[type="submit"] {
 .footer-widgets-block input[type="search"],
 .footer-widgets-block input[type="tel"],
 .footer-widgets-block input[type="text"] {
-	box-sizing: border-box;
 	padding: 1rem !important;
 	background: rgb(var(--wcus--color--tan--rgb) / 0.05);
 	border-color: var(--wcus--color--fern);
@@ -192,7 +191,6 @@ body #eu-cookie-law input[type="submit"] {
 .footer-widgets-block input[type="button"],
 .footer-widgets-block input[type="reset"],
 .footer-widgets-block button {
-	box-sizing: border-box;
 	margin-left: 0 !important;
 	padding: 1rem !important;
 	background: var(--wcus--color--orange) !important;
