@@ -1,0 +1,26 @@
+/* Speaker page */
+
+.speaker-avatar img {
+	border-radius: 50%;
+}
+
+.speaker-avatar {
+	text-align: center;
+	display: flex;
+
+	&::before,
+	&::after {
+		content: "";
+		flex: 1;
+		margin: * 1rem;
+		background-image: url(https://wc-us.org/wp-content/uploads/2021/09/border-small.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 192px 6px;
+	}
+}
+
+#session-speaker-names,
+#speaker-session-names {
+	padding-left: 0;
+}
