@@ -421,7 +421,7 @@ tbody td {
 		color: currentColor;
 	}
 
-.entry-meta .updated {
+.entry-meta .updated:not(.published) {
 		display: none;
 	}
 
@@ -960,8 +960,36 @@ body #eu-cookie-law input[type="submit"]:focus {
 		box-sizing: border-box;
 	}
 
+/* Organizers block */
+
 .wordcamp-block.wordcamp-organizers {
 	padding-left: 0;
+}
+
+.wordcamp-organizers__post {
+	display: grid;
+	grid-column-gap: 1rem;
+	grid-template-areas: "empty name" "avatar content";
+}
+
+.wordcamp-organizers__title {
+	grid-area: name;
+}
+
+.wordcamp-organizers__post .wordcamp-image__avatar-container {
+	grid-area: avatar;
+}
+
+.wordcamp-image__avatar-container img {
+	border-radius: 50%;
+}
+
+.wordcamp-organizers__content {
+	grid-area: content;
+}
+
+.wordcamp-organizers__content :first-child {
+	margin-top: 0;
 }
 
 @media (max-width: 599px) {

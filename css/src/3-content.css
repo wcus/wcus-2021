@@ -37,7 +37,7 @@
 		color: currentColor;
 	}
 
-	& .updated {
+	& .updated:not(.published) {
 		display: none;
 	}
 }
