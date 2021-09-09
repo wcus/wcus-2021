@@ -582,16 +582,23 @@ body.error404 .page-header {
 	        clip-path: revert;
 	overflow: revert;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin: 0;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	height: 18rem;
+	padding: 2rem 2rem 4rem;
+	min-height: 18rem;
 	width: 100%;
 	background: #262c20;
 	color: #fffdf4;
 	text-align: center;
+}
+
+.archive-description {
+	max-width: 60rem;
+	font-size: 1rem;
+	line-height: 1.4;
+	text-align: left;
 }
 
 .comments-area {

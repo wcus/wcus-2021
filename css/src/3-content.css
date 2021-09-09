@@ -194,13 +194,21 @@ body.error404 .page-header {
 	clip-path: revert;
 	overflow: revert;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin: 0;
-	padding: * 2rem;
-	height: 18rem;
+	padding: 2rem 2rem 4rem;
+	min-height: 18rem;
 	width: 100%;
 	background: var(--wcus--color--forest);
 	color: var(--wcus--color--cream);
 	text-align: center;
+}
+
+.archive-description {
+	max-width: var(--wcus--content-width--med);
+	font-size: var(--wcus--font-size--small);
+	line-height: var(--wcus--line-height--small);
+	text-align: left;
 }
