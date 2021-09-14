@@ -1047,22 +1047,29 @@ body #eu-cookie-law input[type="submit"]:focus {
 }
 
 .wp-block-wordcamp-avatar {
-	max-width: 100%;
-	-webkit-clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 50% 90%, 0 100%);
-	        clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 50% 90%, 0 100%);
+	margin-top: -16px;
+	max-width: 100%
 }
 
 .wp-block-wordcamp-avatar img {
-	-o-object-fit: cover;
-	   object-fit: cover;
-}
+		-webkit-clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 50% 90%, 0 100%);
+		        clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 50% 90%, 0 100%);
+	}
 
 .wp-block-post:nth-child(3n+2) .wp-block-wordcamp-avatar {
-	-webkit-clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
-	        clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+	margin-top: 16px
 }
 
+.wp-block-post:nth-child(3n+2) .wp-block-wordcamp-avatar img {
+		-webkit-clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+		        clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+	}
+
 @media (max-width: 599px) {
+
+	.wp-block-wordcamp-avatar {
+		margin-top: 0 !important;
+	}
 
 	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column .wp-block-buttons.is-content-justification-right {
 		justify-content: flex-start;
