@@ -127,6 +127,19 @@
 	color: var(--wcus--color--evergreen);
 }
 
+.wp-block-wordcamp-avatar {
+	max-width: 100%;
+	clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 50% 90%, 0 100%);
+}
+
+.wp-block-wordcamp-avatar img {
+	object-fit: cover;
+}
+
+.wp-block-post:nth-child(3n+2) .wp-block-wordcamp-avatar {
+	clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
 @media (max-width: 599px) {
 
 	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column .wp-block-buttons.is-content-justification-right {

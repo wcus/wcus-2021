@@ -1046,6 +1046,22 @@ body #eu-cookie-law input[type="submit"]:focus {
 	color: #192d19;
 }
 
+.wp-block-wordcamp-avatar {
+	max-width: 100%;
+	-webkit-clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 50% 90%, 0 100%);
+	        clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 100%, 50% 90%, 0 100%);
+}
+
+.wp-block-wordcamp-avatar img {
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+.wp-block-post:nth-child(3n+2) .wp-block-wordcamp-avatar {
+	-webkit-clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+	        clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
 @media (max-width: 599px) {
 
 	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column .wp-block-buttons.is-content-justification-right {
@@ -1502,6 +1518,12 @@ body.admin-bar .screen-reader-text:focus {
 }
 
 /* Alignments */
+
+.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
 
 .alignfull,
 .alignwide {
