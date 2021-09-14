@@ -128,7 +128,8 @@
 }
 
 .wp-block-wordcamp-avatar {
-	margin-top: -16px;
+	position: relative;
+	top: -16px;
 	max-width: 100%;
 
 	& img {
@@ -137,7 +138,7 @@
 }
 
 .wp-block-post:nth-child(3n+2) .wp-block-wordcamp-avatar {
-	margin-top: 16px;
+	top: 16px;
 
 	& img {
 		clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
@@ -147,7 +148,7 @@
 @media (max-width: 599px) {
 
 	.wp-block-wordcamp-avatar {
-		margin-top: 0 !important;
+		position: revert !important;
 	}
 
 	.wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column .wp-block-buttons.is-content-justification-right {
