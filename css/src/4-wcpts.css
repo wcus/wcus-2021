@@ -24,3 +24,15 @@
 #speaker-session-names {
 	padding-left: 0;
 }
+
+/* Sponsor pages */
+
+body.single-wcb_sponsor .entry-image {
+	margin-top: 6rem;
+	padding: 0.75rem;
+	background: var(--wcus--color--cream);
+}
+
+body.single-wcb_sponsor article.has-post-thumbnail .entry-header::before {
+	height: 30rem;
+}
