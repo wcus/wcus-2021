@@ -1002,6 +1002,7 @@ body #eu-cookie-law input[type="submit"]:focus {
 /* Schedule Block */
 
 .wp-block-wordcamp-schedule .wordcamp-schedule__column-header {
+	margin: 0 !important;
 	background: #fffdf4 !important;
 	font-family: "Zilla Slab", serif;
 	font-weight: 400;
@@ -1010,13 +1011,23 @@ body #eu-cookie-law input[type="submit"]:focus {
 }
 
 .wp-block-wordcamp-schedule .wordcamp-schedule__day {
-	background-color: transparent;
+	grid-gap: 0 !important;
+	border-left: 1px solid #f4f4ea;
+	border-top: 1px solid #f4f4ea;
+	background: transparent;
 }
 
 .wp-block-wordcamp-schedule .wordcamp-schedule__time-slot-header,
 .wp-block-wordcamp-schedule .wordcamp-schedule__session {
-	box-shadow: 0 0 1px 1px #f4f4ea !important;
 	background: #fffdf4 !important;
+}
+
+.wordcamp-schedule__column-header,
+.wp-block-wordcamp-schedule .wordcamp-schedule__time-slot-header,
+.wp-block-wordcamp-schedule .wordcamp-schedule__session {
+	box-shadow: none !important;
+	border-right: 1px solid #f4f4ea !important;
+	border-bottom: 1px solid #f4f4ea !important;
 }
 
 .wp-block-wordcamp-schedule .wordcamp-schedule__session {
