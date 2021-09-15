@@ -27,12 +27,22 @@
 
 /* Sponsor pages */
 
-body.single-wcb_sponsor .entry-image {
-	margin-top: 6rem;
-	padding: 0.75rem;
-	background: var(--wcus--color--cream);
+body.single-wcb_sponsor article.has-post-thumbnail .entry-header {
+	margin-bottom: 6rem;
 }
 
 body.single-wcb_sponsor article.has-post-thumbnail .entry-header::before {
-	height: 30rem;
+	height: auto;
 }
+
+body.single-wcb_sponsor .entry-image {
+	position: relative;
+	top: 4rem;
+	padding: 2rem;
+	background: var(--wcus--color--cream);
+	width: var(--wcus--content-width--med);
+	box-sizing: border-box;
+	text-align: center;
+}
+
+

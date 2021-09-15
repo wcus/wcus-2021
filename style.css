@@ -1494,14 +1494,22 @@ body.admin-bar #tix {
 
 /* Sponsor pages */
 
-body.single-wcb_sponsor .entry-image {
-	margin-top: 6rem;
-	padding: 0.75rem;
-	background: #fffdf4;
+body.single-wcb_sponsor article.has-post-thumbnail .entry-header {
+	margin-bottom: 6rem;
 }
 
 body.single-wcb_sponsor article.has-post-thumbnail .entry-header::before {
-	height: 30rem;
+	height: auto;
+}
+
+body.single-wcb_sponsor .entry-image {
+	position: relative;
+	top: 4rem;
+	padding: 2rem;
+	background: #fffdf4;
+	width: 60rem;
+	box-sizing: border-box;
+	text-align: center;
 }
 
 /* Text meant only for screen readers. */
