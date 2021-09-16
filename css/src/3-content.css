@@ -160,7 +160,7 @@ body.page {
 		z-index: -1;
 		height: 25rem;
 		width: 100%;
-		background: var(--wcus--color--forest);
+		background: var(--wcus--color--evergreen);
 	}
 
 	& article:not(.has-post-thumbnail) .entry-header {
@@ -201,7 +201,7 @@ body.error404 .page-header {
 	padding: 2rem 2rem 4rem;
 	min-height: 18rem;
 	width: 100%;
-	background: var(--wcus--color--forest);
+	background: var(--wcus--color--evergreen);
 	color: var(--wcus--color--cream);
 	text-align: center;
 }

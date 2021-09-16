@@ -548,7 +548,7 @@ body.single .entry-header::before, body.page .entry-header::before {
 		z-index: -1;
 		height: 25rem;
 		width: 100%;
-		background: #262c20;
+		background: #192d19;
 	}
 
 body.single article:not(.has-post-thumbnail) .entry-header, body.page article:not(.has-post-thumbnail) .entry-header {
@@ -589,7 +589,7 @@ body.error404 .page-header {
 	padding: 2rem 2rem 4rem;
 	min-height: 18rem;
 	width: 100%;
-	background: #262c20;
+	background: #192d19;
 	color: #fffdf4;
 	text-align: center;
 }
