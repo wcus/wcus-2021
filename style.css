@@ -751,44 +751,6 @@ body #eu-cookie-law input[type="submit"]:focus {
 		color: #262c20;
 	}
 
-.footer-widgets-block .wordcamp-sponsors {
-	margin: 0;
-	padding: 0;
-	grid-row-gap: 1rem;
-	grid-column-gap: 1rem
-}
-
-.footer-widgets-block .wordcamp-sponsors .wordcamp-post-list__post {
-		overflow: visible;
-		display: flex;
-		margin-bottom: 1rem;
-	}
-
-.footer-widgets-block .wordcamp-sponsors .wordcamp-post-list__post div {
-		display: flex;
-		width: 100%;
-	}
-
-.footer-widgets-block .wordcamp-sponsors a {
-		display: flex;
-		padding: 0.75rem;
-		width: 100%;
-		background: #fffdf4;
-		align-items: center;
-	}
-
-.footer-widgets-block .wordcamp-sponsors img {
-		display: block;
-		margin: auto;
-	}
-
-.footer-widgets-block .wordcamp-sponsors a:focus {
-		outline: none;
-		box-shadow:
-			0 0 0 1px #192d19,
-			0 0 0 3px #83a883;
-	}
-
 #footer-widget-2 {
 	display: grid;
 	margin: 0 auto;
@@ -1057,6 +1019,8 @@ body #eu-cookie-law input[type="submit"]:focus {
 	color: #192d19;
 }
 
+/* Avatars */
+
 .wp-block-wordcamp-avatar {
 	position: relative;
 	top: -16px;
@@ -1075,6 +1039,46 @@ body #eu-cookie-law input[type="submit"]:focus {
 .wp-block-post:nth-child(3n+2) .wp-block-wordcamp-avatar img {
 		-webkit-clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
 		        clip-path: polygon(0 0, 50% 10%, 100% 0, 100% 90%, 50% 100%, 0 90%);
+	}
+
+/* Sponsors block */
+
+.wordcamp-sponsors {
+	margin: 0;
+	padding: 0;
+	grid-row-gap: 1rem;
+	grid-column-gap: 1rem
+}
+
+.wordcamp-sponsors .wordcamp-post-list__post {
+		overflow: visible;
+		display: flex;
+		margin-bottom: 1rem;
+	}
+
+.wordcamp-sponsors .wordcamp-post-list__post div {
+		display: flex;
+		width: 100%;
+	}
+
+.wordcamp-sponsors a {
+		display: flex;
+		padding: 0.75rem;
+		width: 100%;
+		background: #fffdf4;
+		align-items: center;
+	}
+
+.wordcamp-sponsors img {
+		display: block;
+		margin: auto;
+	}
+
+.wordcamp-sponsors a:focus {
+		outline: none;
+		box-shadow:
+			0 0 0 1px #192d19,
+			0 0 0 3px #83a883;
 	}
 
 @media (max-width: 599px) {
