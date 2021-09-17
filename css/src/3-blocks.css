@@ -166,7 +166,7 @@
 	grid-row-gap: 1rem;
 	grid-column-gap: 1rem;
 
-	& .wordcamp-post-list__post {
+	& .wordcamp-post-list__post:not(#specificity) {
 		overflow: visible;
 		display: flex;
 		margin-bottom: 1rem;

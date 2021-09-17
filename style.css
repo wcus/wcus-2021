@@ -1050,7 +1050,7 @@ body #eu-cookie-law input[type="submit"]:focus {
 	grid-column-gap: 1rem
 }
 
-.wordcamp-sponsors .wordcamp-post-list__post {
+.wordcamp-sponsors .wordcamp-post-list__post:not(#specificity) {
 		overflow: visible;
 		display: flex;
 		margin-bottom: 1rem;
