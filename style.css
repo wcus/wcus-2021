@@ -553,7 +553,7 @@ body.single .entry-header::before, body.page .entry-header::before {
 
 body.single article:not(.has-post-thumbnail) .entry-header, body.page article:not(.has-post-thumbnail) .entry-header {
 		height: 23rem;
-		justify-content: flex-start;
+		justify-content: center;
 	}
 
 body.single article.has-post-thumbnail .entry-header::before, body.page article.has-post-thumbnail .entry-header::before {
@@ -561,8 +561,13 @@ body.single article.has-post-thumbnail .entry-header::before, body.page article.
 	}
 
 body.single .entry-title, body.page .entry-title {
+		max-width: 60rem;
 		letter-spacing: 0.02em;
 		text-transform: uppercase;
+	}
+
+body.single article:not(.has-post-thumbnail) .entry-title, body.page article:not(.has-post-thumbnail) .entry-title {
+		margin-top: 0;
 	}
 
 body.single .entry-meta, body.page .entry-meta {
@@ -570,7 +575,7 @@ body.single .entry-meta, body.page .entry-meta {
 	}
 
 body.single .entry-content, body.page .entry-content {
-		margin-top: 2rem;
+		margin-top: 5rem;
 	}
 
 body.archive .page-header,
