@@ -1074,7 +1074,8 @@ body #eu-cookie-law input[type="submit"]:focus {
 		margin: auto;
 	}
 
-.wordcamp-sponsors a:focus {
+.wordcamp-sponsors a:hover,
+	.wordcamp-sponsors a:focus {
 		outline: none;
 		box-shadow:
 			0 0 0 1px #192d19,

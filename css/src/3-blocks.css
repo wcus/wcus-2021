@@ -190,6 +190,7 @@
 		margin: auto;
 	}
 
+	& a:hover,
 	& a:focus {
 		outline: none;
 		box-shadow:
