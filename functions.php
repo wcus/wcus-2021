@@ -26,6 +26,15 @@ add_filter( 'wcpt_session_post_video_info_enabled_site_ids',   'wcus_2021_enable
 add_filter( 'wcpt_speaker_post_session_info_enabled_site_ids', 'wcus_2021_enable_features' );
 
 /**
+ * Override the current time for the live schedule block.
+ */
+function wcus_2021_add_script_data( array $data ) {
+	$data['live-schedule']['nowOverride'] = 1633107900000;
+	return $data;
+}
+add_filter( 'wordcamp_blocks_script_data', 'wcus_2021_add_script_data' );
+
+/**
  * Enqueue child theme style and dequeue the parent style.
  */
 function wcus_2021_enqueue_styles() {
