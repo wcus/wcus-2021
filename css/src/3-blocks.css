@@ -226,6 +226,11 @@
 	min-width: auto;
 }
 
+.youtube-embeds .wp-block-embed-youtube iframe {
+	height: 100% !important;
+	width: 100% !important;
+}
+
 /* Live Schedule */
 
 .wordcamp-live-schedule__title {
