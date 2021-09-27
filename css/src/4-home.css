@@ -114,18 +114,6 @@
 	font-size: var(--wcus--font-size--small);
 }
 
-body.home .entry-content {
-	margin-top: 0;
-}
-
-body.home .entry-footer {
-	display: none;
-}
-
-body.home .site-footer {
-	margin-top: 0;
-}
-
 @media screen and (max-width: 782px) {
 
 	.homepage-header .meta-past-locations::before {

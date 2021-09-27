@@ -528,6 +528,14 @@ body.page-template-page-full-width .entry-header {
 	}
 
 body.page-template-page-full-width .entry-content {
+		margin-top: 0 !important;
+	}
+
+body.page-template-page-full-width .entry-footer {
+		display: none;
+	}
+
+body.page-template-page-full-width .site-footer {
 		margin-top: 0;
 	}
 
@@ -1087,6 +1095,76 @@ body #eu-cookie-law input[type="submit"]:focus {
 			0 0 0 3px #83a883;
 	}
 
+/* Youtube embed blocks */
+
+.wp-block-wordcamp-youtube-live-chat-embed__availability-warning {
+	font-size: 1rem;
+}
+
+.wp-block-columns.youtube-embeds .wp-block-column {
+	box-sizing: border-box;
+}
+
+.wp-block-columns.youtube-embeds .wp-block-column:nth-of-type(1) {
+	margin-right: 0;
+	padding-right: 1rem;
+	max-width: 66rem;
+}
+
+.wp-block-columns.youtube-embeds .wp-block-column:nth-of-type(2) {
+	margin-left: 0;
+	padding-left: 1rem;
+	max-width: 24rem;
+}
+
+.wp-block-wordcamp-youtube-live-chat-embed iframe {
+	max-width: 100%;
+	min-width: auto;
+}
+
+/* Live Schedule */
+
+.wordcamp-live-schedule__title {
+	text-align: center;
+}
+
+.wordcamp-live-schedule__session-track {
+	font-family: "Zilla Slab", serif;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 1.2;
+}
+
+.wordcamp-live-schedule__session-title {
+	margin-bottom: 0;
+	font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1.125rem;
+	line-height: 1.6;
+}
+
+.wordcamp-live-schedule__session-time,
+.wordcamp-live-schedule__session-speaker {
+	font-size: 1rem;
+}
+
+.wordcamp-live-schedule > p:not([class]) {
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+
+	.wp-block-columns.youtube-embeds {
+		display: block;
+	}
+
+	.wp-block-columns.youtube-embeds .wp-block-column {
+		margin-left: auto !important;
+		margin-right: auto !important;
+		padding: 0 !important;
+		max-width: 100% !important;
+	}
+}
+
 @media (max-width: 599px) {
 
 	.wp-block-wordcamp-avatar {
@@ -1221,18 +1299,6 @@ body #eu-cookie-law input[type="submit"]:focus {
 
 .home-section-news .wp-block-query .wp-block-post-date {
 	font-size: 1rem;
-}
-
-body.home .entry-content {
-	margin-top: 0;
-}
-
-body.home .entry-footer {
-	display: none;
-}
-
-body.home .site-footer {
-	margin-top: 0;
 }
 
 @media screen and (max-width: 782px) {
