@@ -1690,37 +1690,37 @@ body.admin-bar .screen-reader-text:focus {
 }
 
 :root .has-luminous-vivid-orange-background-color {
-	background-color: #f39641;
-	color: #262c20;
+	background-color: #f39641 !important;
+	color: #262c20 !important;
 }
 
 :root .has-luminous-vivid-amber-background-color {
-	background-color: #edd991;
-	color: #262c20;
+	background-color: #edd991 !important;
+	color: #262c20 !important;
 }
 
 :root .has-light-green-cyan-background-color {
-	background-color: #83a883;
-	color: #262c20;
+	background-color: #83a883 !important;
+	color: #262c20 !important;
 }
 
 :root .has-vivid-green-cyan-background-color {
-	background-color: #192d19;
-	color: #fffdf4;
+	background-color: #192d19 !important;
+	color: #fffdf4 !important;
 }
 
 :root .has-luminous-vivid-orange-color {
-	color: #f39641;
+	color: #f39641 !important;
 }
 
 :root .has-luminous-vivid-amber-color {
-	color: #edd991;
+	color: #edd991 !important;
 }
 
 :root .has-light-green-cyan-color {
-	color: #83a883;
+	color: #83a883 !important;
 }
 
 :root .has-vivid-green-cyan-color {
-	color: #192d19;
+	color: #192d19 !important;
 }

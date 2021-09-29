@@ -45,37 +45,37 @@
 }
 
 :root .has-luminous-vivid-orange-background-color {
-	background-color: var(--wcus--color--orange);
-	color: var(--wcus--color--forest);
+	background-color: var(--wcus--color--orange) !important;
+	color: var(--wcus--color--forest) !important;
 }
 
 :root .has-luminous-vivid-amber-background-color {
-	background-color: var(--wcus--color--sand);
-	color: var(--wcus--color--forest);
+	background-color: var(--wcus--color--sand) !important;
+	color: var(--wcus--color--forest) !important;
 }
 
 :root .has-light-green-cyan-background-color {
-	background-color: var(--wcus--color--fern);
-	color: var(--wcus--color--forest);
+	background-color: var(--wcus--color--fern) !important;
+	color: var(--wcus--color--forest) !important;
 }
 
 :root .has-vivid-green-cyan-background-color {
-	background-color: var(--wcus--color--evergreen);
-	color: var(--wcus--color--cream);
+	background-color: var(--wcus--color--evergreen) !important;
+	color: var(--wcus--color--cream) !important;
 }
 
 :root .has-luminous-vivid-orange-color {
-	color: var(--wcus--color--orange);
+	color: var(--wcus--color--orange) !important;
 }
 
 :root .has-luminous-vivid-amber-color {
-	color: var(--wcus--color--sand);
+	color: var(--wcus--color--sand) !important;
 }
 
 :root .has-light-green-cyan-color {
-	color: var(--wcus--color--fern);
+	color: var(--wcus--color--fern) !important;
 }
 
 :root .has-vivid-green-cyan-color {
-	color: var(--wcus--color--evergreen);
+	color: var(--wcus--color--evergreen) !important;
 }
