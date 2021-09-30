@@ -896,7 +896,8 @@ body #eu-cookie-law input[type="submit"]:focus {
 
 /* Buttons */
 
-.wp-block-button__link {
+.wp-block-button__link,
+.wp-block-button__link:visited {
 	background-color: #192d19;
 	color: #fffdf4;
 	border-radius: 5px;
@@ -904,8 +905,7 @@ body #eu-cookie-law input[type="submit"]:focus {
 
 .wp-block-button__link:active,
 .wp-block-button__link:focus,
-.wp-block-button__link:hover,
-.wp-block-button__link:visited {
+.wp-block-button__link:hover {
 	background-color: #83a883;
 	color: #262c20;
 }

@@ -1,5 +1,6 @@
 /* Buttons */
-.wp-block-button__link {
+.wp-block-button__link,
+.wp-block-button__link:visited {
 	background-color: var(--wcus--color--evergreen);
 	color: var(--wcus--color--cream);
 	border-radius: 5px;
@@ -7,8 +8,7 @@
 
 .wp-block-button__link:active,
 .wp-block-button__link:focus,
-.wp-block-button__link:hover,
-.wp-block-button__link:visited {
+.wp-block-button__link:hover {
 	background-color: var(--wcus--color--fern);
 	color: var(--wcus--color--forest);
 }
