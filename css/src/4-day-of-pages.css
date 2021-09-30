@@ -29,26 +29,34 @@ body.page-slug-columbia-track .wp-block-cover::before {
 	background-image: url(https://wc-us.org/wp-content/uploads/2021/09/columbia-track.svg);
 }
 
+@media screen and (max-width: 1030px) {
+
+	body.page-slug-columbia-track .wp-block-cover {
+		min-height: 300px;
+	}
+}
+
 @media screen and (max-width: 960px) {
 
-	body.page-slug-yukon-track .wp-block-cover,
-	body.page-slug-columbia-track .wp-block-cover {
+	body.page-slug-yukon-track .wp-block-cover {
 		min-height: 300px;
 	}
 }
 
 @media screen and (max-width: 750px) {
 
-	body.page-slug-yukon-track .wp-block-cover::before,
-	body.page-slug-columbia-track .wp-block-cover::before {
+	body.page-slug-yukon-track .wp-block-cover::before {
 		background-size: calc(850px / 2) calc(490px / 2);
+	}
+
+	body.page-slug-columbia-track .wp-block-cover {
+		min-height: auto;
 	}
 }
 
 @media screen and (max-width: 600px) {
 
-	body.page-slug-yukon-track .wp-block-cover,
-	body.page-slug-columbia-track .wp-block-cover {
+	body.page-slug-yukon-track .wp-block-cover {
 		min-height: auto;
 		padding-bottom: 150px;
 	}
@@ -63,7 +71,7 @@ body.page-slug-columbia-track .wp-block-cover::before {
 
 	body.page-slug-yukon-track .wp-block-cover::before,
 	body.page-slug-columbia-track .wp-block-cover::before {
-		background-image: url(https://wc-us.org/wp-content/uploads/2021/08/compass-rose.svg);
+		background-image: url(https://wc-us.org/wp-content/uploads/2021/09/compass-rose-cream.svg);
 		background-position: 90% center;
 		background-size: 80px 80px;
 	}
