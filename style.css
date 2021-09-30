@@ -1130,7 +1130,11 @@ body #eu-cookie-law input[type="submit"]:focus {
 /* Live Schedule */
 
 .wordcamp-live-schedule__title {
-	text-align: center;
+	margin: 0 0 2.5rem;
+}
+
+.wordcamp-live-schedule__session {
+	margin-bottom: 1.625rem;
 }
 
 .wordcamp-live-schedule__session-track {
@@ -1141,7 +1145,7 @@ body #eu-cookie-law input[type="submit"]:focus {
 }
 
 .wordcamp-live-schedule__session-title {
-	margin-bottom: 0;
+	margin-bottom: 0.625rem;
 	font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 1.125rem;
 	line-height: 1.6;
@@ -1152,9 +1156,35 @@ body #eu-cookie-law input[type="submit"]:focus {
 	font-size: 1rem;
 }
 
+.wordcamp-live-schedule__session-time {
+	margin-bottom: 1rem;
+}
+
+.wordcamp-live-schedule__session-speaker a {
+	text-decoration: none
+}
+
+.wordcamp-live-schedule__session-speaker a:hover,
+	.wordcamp-live-schedule__session-speaker a:focus {
+		text-decoration: underline;
+	}
+
 .wordcamp-live-schedule > p:not([class]) {
 	text-align: center;
 }
+
+.wordcamp-live-schedule .wordcamp-live-schedule__session:nth-of-type(2n) {
+	margin-bottom: 2.5rem;
+	padding-bottom: 4rem;
+	background-image: url(https://wc-us.org/wp-content/uploads/2021/08/border.svg);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 960px 7px;
+}
+
+/**
+ * Responsive rules.
+ */
 
 @media (max-width: 800px) {
 
@@ -1360,6 +1390,10 @@ body.blog article.post {
 
 body.blog article.post:last-of-type {
 		background: none;
+	}
+
+body.blog .entry-title {
+		max-width: 60rem;
 	}
 
 body.blog .entry-footer {
@@ -1583,6 +1617,20 @@ body.single-wcb_sponsor article.has-post-thumbnail .entry-header::before {
 	height: auto;
 }
 
+body.single-wcb_sponsor .entry-title {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	        clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
 body.single-wcb_sponsor .entry-image {
 	position: relative;
 	top: 4rem;
@@ -1591,6 +1639,95 @@ body.single-wcb_sponsor .entry-image {
 	width: 60rem;
 	box-sizing: border-box;
 	text-align: center;
+}
+
+body.page-slug-yukon-track .wp-block-cover, body.page-slug-columbia-track .wp-block-cover {
+		min-height: 490px;
+		background: rgba(67, 83, 60, 0.5) !important
+	}
+
+body.page-slug-yukon-track .wp-block-cover h1,
+		body.page-slug-yukon-track .wp-block-cover a,
+		body.page-slug-columbia-track .wp-block-cover h1,
+		body.page-slug-columbia-track .wp-block-cover a {
+			margin: 0;
+			color: #fffdf4 !important;
+		}
+
+body.page-slug-yukon-track .wp-block-cover::before, body.page-slug-columbia-track .wp-block-cover::before {
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			background-size: contain;
+			opacity: 1 !important;
+		}
+
+body.page-slug-yukon-track .wp-block-cover::before {
+	background-image: url(https://wc-us.org/wp-content/uploads/2021/09/yukon-track.svg);
+}
+
+body.page-slug-columbia-track .wp-block-cover::before {
+	background-image: url(https://wc-us.org/wp-content/uploads/2021/09/columbia-track.svg);
+}
+
+@media screen and (max-width: 960px) {
+
+	body.page-slug-yukon-track .wp-block-cover,
+	body.page-slug-columbia-track .wp-block-cover {
+		min-height: 300px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+
+	body.page-slug-yukon-track .wp-block-cover::before,
+	body.page-slug-columbia-track .wp-block-cover::before {
+		background-size: calc(850px / 2) calc(490px / 2);
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	body.page-slug-yukon-track .wp-block-cover,
+	body.page-slug-columbia-track .wp-block-cover {
+		min-height: auto;
+		padding-bottom: 150px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	body.page-slug-yukon-track .wp-block-cover,
+	body.page-slug-columbia-track .wp-block-cover {
+		padding-bottom: 1em;
+	}
+
+	body.page-slug-yukon-track .wp-block-cover::before,
+	body.page-slug-columbia-track .wp-block-cover::before {
+		background-image: url(https://wc-us.org/wp-content/uploads/2021/08/compass-rose.svg);
+		background-position: 90% center;
+		background-size: 80px 80px;
+	}
+}
+
+.wp-block-embed-youtube iframe {
+	height: 100% !important;
+	width: 100% !important;
+}
+
+.wp-block-group.is-live-schedule-container .wp-block-group__inner-container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 42rem;
+}
+
+.wordcamp-live-schedule .wp-block-button {
+	display: none;
+}
+
+/* Hide day label on the schedule. */
+
+.page-template-page-full-width h2.wordcamp-schedule__date {
+	display: none;
 }
 
 /* Text meant only for screen readers. */

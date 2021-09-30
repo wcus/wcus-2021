@@ -35,6 +35,19 @@ body.single-wcb_sponsor article.has-post-thumbnail .entry-header::before {
 	height: auto;
 }
 
+body.single-wcb_sponsor .entry-title {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
 body.single-wcb_sponsor .entry-image {
 	position: relative;
 	top: 4rem;

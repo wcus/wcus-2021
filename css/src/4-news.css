@@ -32,6 +32,10 @@ body.blog {
 		background: none;
 	}
 
+	& .entry-title {
+		max-width: 60rem;
+	}
+
 	& .entry-footer {
 		display: none;
 	}

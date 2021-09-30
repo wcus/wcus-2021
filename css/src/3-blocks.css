@@ -234,7 +234,11 @@
 /* Live Schedule */
 
 .wordcamp-live-schedule__title {
-	text-align: center;
+	margin: 0 0 2.5rem;
+}
+
+.wordcamp-live-schedule__session {
+	margin-bottom: 1.625rem;
 }
 
 .wordcamp-live-schedule__session-track {
@@ -245,7 +249,7 @@
 }
 
 .wordcamp-live-schedule__session-title {
-	margin-bottom: 0;
+	margin-bottom: 0.625rem;
 	font-family: var(--wcus--font--body);
 	font-size: var(--wcus--font-size--body);
 	line-height: var(--wcus--line-height--body);
@@ -256,9 +260,35 @@
 	font-size: var(--wcus--font-size--small);
 }
 
+.wordcamp-live-schedule__session-time {
+	margin-bottom: 1rem;
+}
+
+.wordcamp-live-schedule__session-speaker a {
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
 .wordcamp-live-schedule > p:not([class]) {
 	text-align: center;
 }
+
+.wordcamp-live-schedule .wordcamp-live-schedule__session:nth-of-type(2n) {
+	margin-bottom: 2.5rem;
+	padding-bottom: 4rem;
+	background-image: url(https://wc-us.org/wp-content/uploads/2021/08/border.svg);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 960px 7px;
+}
+
+/**
+ * Responsive rules.
+ */
 
 @media (max-width: 800px) {
 

@@ -1,0 +1,90 @@
+
+body.page-slug-yukon-track,
+body.page-slug-columbia-track {
+
+	& .wp-block-cover {
+		min-height: 490px;
+		background: rgba(67, 83, 60, 0.5) !important;
+
+		& h1,
+		& a {
+			margin: 0;
+			color: var(--wcus--color--cream) !important;
+		}
+
+		&::before {
+			background-repeat: no-repeat;
+			background-position: bottom right;
+			background-size: contain;
+			opacity: 1 !important;
+		}
+	}
+}
+
+body.page-slug-yukon-track .wp-block-cover::before {
+	background-image: url(https://wc-us.org/wp-content/uploads/2021/09/yukon-track.svg);
+}
+
+body.page-slug-columbia-track .wp-block-cover::before {
+	background-image: url(https://wc-us.org/wp-content/uploads/2021/09/columbia-track.svg);
+}
+
+@media screen and (max-width: 960px) {
+
+	body.page-slug-yukon-track .wp-block-cover,
+	body.page-slug-columbia-track .wp-block-cover {
+		min-height: 300px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+
+	body.page-slug-yukon-track .wp-block-cover::before,
+	body.page-slug-columbia-track .wp-block-cover::before {
+		background-size: calc(850px / 2) calc(490px / 2);
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	body.page-slug-yukon-track .wp-block-cover,
+	body.page-slug-columbia-track .wp-block-cover {
+		min-height: auto;
+		padding-bottom: 150px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+	body.page-slug-yukon-track .wp-block-cover,
+	body.page-slug-columbia-track .wp-block-cover {
+		padding-bottom: 1em;
+	}
+
+	body.page-slug-yukon-track .wp-block-cover::before,
+	body.page-slug-columbia-track .wp-block-cover::before {
+		background-image: url(https://wc-us.org/wp-content/uploads/2021/08/compass-rose.svg);
+		background-position: 90% center;
+		background-size: 80px 80px;
+	}
+}
+
+.wp-block-embed-youtube iframe {
+	height: 100% !important;
+	width: 100% !important;
+}
+
+.wp-block-group.is-live-schedule-container .wp-block-group__inner-container {
+	margin: * auto;
+	max-width: 42rem;
+}
+
+.wordcamp-live-schedule .wp-block-button {
+	display: none;
+}
+
+/* Hide day label on the schedule. */
+
+.page-template-page-full-width h2.wordcamp-schedule__date {
+	display: none;
+}
