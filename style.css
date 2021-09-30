@@ -1169,10 +1169,6 @@ body #eu-cookie-law input[type="submit"]:focus {
 		text-decoration: underline;
 	}
 
-.wordcamp-live-schedule > p:not([class]) {
-	text-align: center;
-}
-
 .wordcamp-live-schedule .wordcamp-live-schedule__session:nth-of-type(2n) {
 	margin-bottom: 2.5rem;
 	padding-bottom: 4rem;
