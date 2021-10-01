@@ -1223,6 +1223,12 @@ body #eu-cookie-law input[type="submit"]:focus {
 	opacity: 1 !important;
 }
 
+.day-of-header::before {
+	background: url(https://wc-us.org/wp-content/uploads/2021/09/day-of-header.svg) no-repeat center;
+	background-size: 1400px 918px;
+	opacity: 1 !important;
+}
+
 .homepage-header .wp-block-cover__inner-container::before {
 	content: "";
 	top: 3rem;
@@ -1234,7 +1240,8 @@ body #eu-cookie-law input[type="submit"]:focus {
 	background-size: contain;
 }
 
-.homepage-header h1 {
+.homepage-header h1,
+.day-of-header h1 {
 	margin: 0 0 0.75rem;
 	font-size: 4.25rem;
 	line-height: 0.8;
@@ -1242,7 +1249,8 @@ body #eu-cookie-law input[type="submit"]:focus {
 	text-transform: uppercase;
 }
 
-.homepage-header .meta-event-date {
+.homepage-header .meta-event-date,
+.day-of-header .meta-event-date {
 	margin: 0;
 	font-size: 1.125rem;
 	line-height: 1.2;
@@ -1251,7 +1259,8 @@ body #eu-cookie-law input[type="submit"]:focus {
 	text-transform: uppercase;
 }
 
-.homepage-header .meta-past-locations {
+.homepage-header .meta-past-locations,
+.day-of-header .meta-past-locations {
 	margin: 0;
 	color: #83a883 !important;
 	font-size: 0.875rem;
@@ -1261,7 +1270,8 @@ body #eu-cookie-law input[type="submit"]:focus {
 	text-transform: uppercase;
 }
 
-.homepage-header .meta-past-locations::before {
+.homepage-header .meta-past-locations::before,
+.day-of-header .meta-past-locations::before {
 	content: "";
 	display: inline-block;
 	margin-right: 1rem;
@@ -1269,6 +1279,12 @@ body #eu-cookie-law input[type="submit"]:focus {
 	height: 0.75rem;
 	background: url(https://wc-us.org/wp-content/uploads/2021/08/banner.svg) no-repeat center;
 	background-size: contain;
+}
+
+.day-of-header .meta-past-locations::before {
+	display: block;
+	margin: 0 auto 3rem;
+	opacity: 0.8;
 }
 
 .home-section-about {
@@ -1733,6 +1749,113 @@ body.page-slug-columbia-track .wp-block-cover::before {
 .page-template-page-full-width h2.wordcamp-schedule__date {
 	display: none;
 }
+
+/* Day of homepage. */
+
+.day-of-content {
+	padding: 3rem 0 1rem !important
+}
+
+.day-of-content * {
+		box-sizing: border-box;
+	}
+
+.day-of-content {
+
+	/* Group in a group is the top text. */
+}
+
+.day-of-content .wp-block-group__inner-container .wp-block-group__inner-container {
+		margin-bottom: 4rem;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 32.5rem;
+	}
+
+.day-of-content .wp-block-columns {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		margin-bottom: 1rem;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 87.5rem;
+		display: grid;
+		gap: 1rem
+	}
+
+.day-of-content .wp-block-columns .wp-block-column:not(#hack) {
+			margin: 0;
+		}
+
+.day-of-content .wp-block-columns.has-4-columns {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+.day-of-content .wp-block-columns.has-2-columns {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+.wp-block-columns.has-4-columns > div figure {
+		display: flex;
+		align-items: center;
+		justify-content: center
+	}
+
+.wp-block-columns.has-4-columns > div figure::before {
+			content: "";
+			width: 1px;
+			margin-left: -1px;
+			float: left;
+			height: 0;
+			padding-top: 100%;
+		}
+
+.wp-block-columns.has-4-columns > div figure::after { /* to clear float */
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+.wp-block-columns.has-2-columns {
+	margin-bottom: 0
+}
+
+.wp-block-columns.has-2-columns > div {
+		min-height: 220px;
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		background-size: contain
+	}
+
+.wp-block-columns.has-2-columns > div:first-child {
+			background-image: url(https://wc-us.org/wp-content/uploads/2021/09/yukon-track.svg);
+		}
+
+.wp-block-columns.has-2-columns > div:last-child {
+			background-image: url(https://wc-us.org/wp-content/uploads/2021/09/columbia-track.svg);
+		}
+
+.wp-block-columns.has-2-columns h3 {
+		display: inline-block;
+		margin-bottom: 1rem;
+		margin-top: 0;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		background-color: #758071;
+	}
+
+.wp-block-columns.has-2-columns p {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+.wp-block-columns.has-2-columns a {
+		padding-bottom: 4px;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		color: #fffdf4;
+		background-color: #758071;
+	}
 
 /* Text meant only for screen readers. */
 

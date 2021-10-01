@@ -1,4 +1,3 @@
-
 body.page-slug-yukon-track,
 body.page-slug-columbia-track {
 
@@ -95,4 +94,99 @@ body.page-slug-columbia-track .wp-block-cover::before {
 
 .page-template-page-full-width h2.wordcamp-schedule__date {
 	display: none;
+}
+
+/* Day of homepage. */
+.day-of-content {
+	padding: 3rem 0 1rem !important;
+
+	& * {
+		box-sizing: border-box;
+	}
+
+	/* Group in a group is the top text. */
+	& .wp-block-group__inner-container .wp-block-group__inner-container {
+		margin: * auto 4rem;
+		max-width: var(--wcus--content-width);
+	}
+
+	& .wp-block-columns {
+		padding: * 1rem;
+		margin: * auto 1rem;
+		max-width: var(--wcus--content-width--large);
+		display: grid;
+		gap: 1rem;
+
+		& .wp-block-column:not(#hack) {
+			margin: 0;
+		}
+	}
+
+	& .wp-block-columns.has-4-columns {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	& .wp-block-columns.has-2-columns {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.wp-block-columns.has-4-columns {
+
+	& > div figure {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&::before {
+			content: "";
+			width: 1px;
+			margin-left: -1px;
+			float: left;
+			height: 0;
+			padding-top: 100%;
+		}
+
+		&::after { /* to clear float */
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+}
+
+.wp-block-columns.has-2-columns {
+	margin-bottom: 0;
+
+	& > div {
+		min-height: 220px;
+		background-repeat: no-repeat;
+		background-position: bottom right;
+		background-size: contain;
+
+		&:first-child {
+			background-image: url(https://wc-us.org/wp-content/uploads/2021/09/yukon-track.svg);
+		}
+
+		&:last-child {
+			background-image: url(https://wc-us.org/wp-content/uploads/2021/09/columbia-track.svg);
+		}
+	}
+
+	& h3 {
+		display: inline-block;
+		margin: 0 * 1rem;
+		padding: * 0.5rem;
+		background-color: #758071;
+	}
+
+	& p {
+		margin: 0 *;
+	}
+
+	& a {
+		padding: * 0.5rem 4px;
+		color: var(--wcus--color--cream);
+		background-color: #758071;
+	}
 }
