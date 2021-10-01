@@ -1780,7 +1780,7 @@ body.page-slug-columbia-track .wp-block-cover::before {
 		margin-right: auto;
 		max-width: 87.5rem;
 		display: grid;
-		gap: 1rem
+		grid-column-gap: 1rem
 	}
 
 .day-of-content .wp-block-columns .wp-block-column:not(#hack) {
