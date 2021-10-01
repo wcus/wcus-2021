@@ -753,16 +753,16 @@ body #eu-cookie-law input[type="submit"]:focus {
 		max-width: 87.5rem;
 	}
 
-#footer-widget-1 .wp-block-button__link {
-	color: #fffdf4
+#footer-widget-1 .wp-block-button__link,
+#footer-widget-1 .wp-block-button__link:visited {
+	color: #fffdf4;
 }
 
 #footer-widget-1 .wp-block-button__link:active,
-	#footer-widget-1 .wp-block-button__link:focus,
-	#footer-widget-1 .wp-block-button__link:hover,
-	#footer-widget-1 .wp-block-button__link:visited {
-		color: #262c20;
-	}
+#footer-widget-1 .wp-block-button__link:focus,
+#footer-widget-1 .wp-block-button__link:hover {
+	color: #262c20;
+}
 
 #footer-widget-2 {
 	display: grid;

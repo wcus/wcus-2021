@@ -69,15 +69,15 @@ body #eu-cookie-law input[type="submit"] {
 	}
 }
 
-#footer-widget-1 .wp-block-button__link {
+#footer-widget-1 .wp-block-button__link,
+#footer-widget-1 .wp-block-button__link:visited {
 	color: var(--wcus--color--cream);
+}
 
-	&:active,
-	&:focus,
-	&:hover,
-	&:visited {
-		color: var(--wcus--color--forest);
-	}
+#footer-widget-1 .wp-block-button__link:active,
+#footer-widget-1 .wp-block-button__link:focus,
+#footer-widget-1 .wp-block-button__link:hover {
+	color: var(--wcus--color--forest);
 }
 
 #footer-widget-2 {
